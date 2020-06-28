@@ -7,7 +7,7 @@ On cloning the repo, you should immediately add this main repository as your ups
 git remote add upstream https://github.com/hngi/Team-New-Avengers-Pharmacy.git
 ```
 
-##tips
+## tips
 
 - Use git branch to see the branch you are currently working on.
 - After you git clone repo, you should immediately switch to the develop branch (git checkout develop)
@@ -18,7 +18,7 @@ git remote add upstream https://github.com/hngi/Team-New-Avengers-Pharmacy.git
 git pull upstream develop
 ```
 
-###PR / Task Submission
+## PR / Task Submission
 
 ```sh
 git push origin develop
