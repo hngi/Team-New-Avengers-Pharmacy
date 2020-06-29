@@ -22,7 +22,7 @@ body{
 }
 /* Header */
 header{
-   background: url(/IMAGES/headerBg.png) center center/cover no-repeat;
+   background: url(/variation-ten/src/IMAGES/headerBg.png) center center/cover no-repeat;
 }
 nav{
    background: transparent !important;
@@ -193,7 +193,7 @@ section .line{
 /* Health Section */
 #health,
 #contact{
-   background: url(/IMAGES/headerBg.png) center center/cover no-repeat;
+   background: url(/variation-ten/src/IMAGES/headerBg.png) center center/cover no-repeat;
 }
 #health .desc h1{
    font-weight: bold;
@@ -485,7 +485,7 @@ section .line{
 
 /* Testimonial */
 #testimonial{
-   background: url(/IMAGES/testimonial.png) center center/cover no-repeat;
+   background: url(/variation-ten/src/IMAGES/testimonial.png) center center/cover no-repeat;
 }
 #testimonial .info{
    opacity: 0.9;
@@ -534,7 +534,7 @@ footer{
    margin-top: auto !important;
 }
 footer .container{
-   min-height: 50vh !important;
+   min-height: 80vh !important;
    width: 100% !important;
    display: flex !important;
    flex-direction: column !important;

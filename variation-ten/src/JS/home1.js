@@ -3,7 +3,7 @@ const headerInfo = [
         id: 1,
         infoHead: "Search Lab N95 Face mask",
         infoDetails: "The mask provide comfortable, reliable worker respiratory protection against certain non oil based particles.",
-        img: "/IMAGES/productmask.png"
+        img: "/variation-ten/src/IMAGES/productmask.png"
     },
     {
         id: 2,
@@ -101,54 +101,54 @@ const menu = [
       title: "Diet Tea",
       category: "tablets",
       price: 10,
-      img: "/IMAGES/dietTea.png",},
+      img: "/variation-ten/src/IMAGES/dietTea.png",},
     {
       id: 2,
       title: "BP Reader",
       category: "gadgets",
       price: 120,
-      img: "/IMAGES/BPreader.png",},
+      img: "/variation-ten/src/IMAGES/BPreader.png",},
     {
       id: 3,
       title: "Sex Booster",
       category: "tablets",
       price: 10,
-      img: "/IMAGES/SexBooster.png",
+      img: "/variation-ten/src/IMAGES/SexBooster.png",
     },
     {
       id: 4,
       title: "Pan Set",
       category: "gadgets",
       price: 10,
-      img: "/IMAGES/panset.png",
+      img: "/variation-ten/src/IMAGES/panset.png",
      },
     {
       id: 5,
       title: "Sinus",
       category: "tablets",
       price: 22,
-      img: "/IMAGES/sinussmall.png",
+      img: "/variation-ten/src/IMAGES/sinussmall.png",
       },
     {
       id: 6,
       title: "Soab",
       category: "tablet",
       price: 80,
-      img: "/IMAGES/soab.png",
+      img: "/variation-ten/src/IMAGES/soab.png",
      },
     {
       id: 7,
       title: "Body Builder",
       category: "mask",
       price: 10,
-      img: "/IMAGES/bodybuilder.png",
+      img: "/variation-ten/src/IMAGES/bodybuilder.png",
     },
     {
       id: 8,
       title: "Goss",
       category: "mask",
       price: 5,
-      img: "/IMAGES/goss.png",
+      img: "/variation-ten/src/IMAGES/goss.png",
      }
   ];
 
