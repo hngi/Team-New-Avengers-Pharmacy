@@ -147,7 +147,7 @@ Contact Section Classes */
   background-size: cover;
 }
 .contact-map {
-  height: 400px;
+  height: 300px;
   width: 100%;
 }
 .contact-map .gm-style > div:not(:first-child) {
