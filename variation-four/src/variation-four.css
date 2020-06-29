@@ -86,12 +86,10 @@ i.fa {
   justify-content: center;
 }
 .about .about-box {
-  padding: 2.5rem;
   background-color: var(--secondaryColor);
   color: var(--textColor);
 }
 .about-box h3 {
-  margin-bottom: 3.7rem;
   text-align: center;
 }
 .about-box p {
