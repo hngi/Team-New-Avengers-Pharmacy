@@ -86,12 +86,10 @@ i.fa {
   justify-content: center;
 }
 .about .about-box {
-  padding: 2.5rem;
   background-color: var(--secondaryColor);
   color: var(--textColor);
 }
 .about-box h3 {
-  margin-bottom: 3.7rem;
   text-align: center;
 }
 .about-box p {
@@ -192,6 +190,8 @@ Contact Section Classes */
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 70px;
+  max-width: 70px;
 }
 
 /* Footer Section Classes */
@@ -203,6 +203,94 @@ footer hr {
   width: 95%;
   margin: auto;
 }
+footer p {
+  font-size: 14px;
+}
 footer .special-footer-text {
   color: var(--secondaryColor);
+}
+/* The sidepanel menu */
+.sidepanel {
+  height: 100vh; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #e5e5e5; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.cart-box {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+}
+.cart-box-item {
+  border-right: 1px solid rgba(0, 0, 0, 0.13);
+}
+.cart-box .checked {
+  color: #f2994a;
+}
+
+@media (min-width: 768px) {
+  .cart-box-quantity {
+    border-right: 1px solid rgba(0, 0, 0, 0.13);
+  }
+}
+.cart-box hr {
+  border: 1px solid #4f4f4f;
+  width: 70%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.wrapper-cart {
+  max-width: 1250px;
+}
+.cart-box .form-control {
+  width: 70%;
+}
+.submit-div button {
+  background-color: var(--secondaryColor);
+  color: var(--textColor);
+}
+
+/* Checkout Section */
+.checkout-box {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+}
+.checkout hr {
+  width: 100%;
+}
+.checkout button {
+  background-color: var(--secondaryColor);
+  color: var(--textColor);
 }
