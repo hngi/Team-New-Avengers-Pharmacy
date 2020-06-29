@@ -94,6 +94,9 @@ i.fa {
 }
 .about-box p {
 }
+.about .text-special {
+  color: var(--primaryColor);
+}
 
 /* Services section classes */
 .services {
