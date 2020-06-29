@@ -538,6 +538,14 @@ section .line{
 footer{
    background: var(--primaryColor);
    color: var(--neutralColor);
+   margin: 0 !important;
+   margin-top: auto !important;
+}
+footer .container{
+   min-height: 50vh !important;
+   width: 100% !important;
+   display: flex !important;
+   flex-direction: column !important;
 }
 footer .footer-info {
   padding-top: 150px;
