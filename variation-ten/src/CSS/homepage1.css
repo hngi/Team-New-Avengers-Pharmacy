@@ -267,10 +267,22 @@ section .line{
    background: var(--secondaryColor);
 }
 
+#product .btn-left{
+   /* position: absolute;
+   top: 50%;
+   left: 2%; */
+   color: var(--primaryColor);
+}
+#product .btn-right{
+   /* position: absolute;
+   top: 50%;
+   right: 2%; */
+   color: var(--primaryColor);
+}
 
 /* Cart */
 #cart{
-
+   margin-top: 70px;
 }
 #cart li a{
    border: 0 !important;
@@ -535,6 +547,18 @@ section .line{
    border-bottom: 2px solid var(--secondaryColor);
    width: 23%;
    padding-bottom: 5px;
+}
+#testimonial .btn-left,
+#testimonial .btn-middle,
+#testimonial .btn-right{
+   text-align: left !important;
+   width: 32px !important;
+   height: 1px !important;
+   border-radius: 8px;
+   background: var(--textBlackColor);
+}
+#testimonial .active{
+   background: var(--secondaryColor);
 }
 /* Footer */
 footer{
