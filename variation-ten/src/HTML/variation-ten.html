@@ -1,12 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>EnvatoCare|| Homepage</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
+     <!-- animate.css  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+     <!-- AOS.css  -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Icon Link -->
+    <link rel="shortcut icon" href="/variation-ten/src/IMAGES/EnvatoCareLogo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,10 +22,10 @@
   <body>
       
     <!-- Header -->
-    <header id="envantoCareHeader">
+    <header  class="animate__animated animate__fadeIn" id="envantoCareHeader">
         <!-- Nav -->
           <nav class="navbar navbar-expand-md container">
-            <a class="navbar-brand" href="#"><img src="/variation-ten/src/IMAGES/EnvatoCareLogo.png" alt="Envato Care Logo"></a>
+            <a class="navbar-brand" href="#envantoCareHeader"><img src="/variation-ten/src/IMAGES/EnvatoCareLogo.png" alt="Envato Care Logo"></a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
@@ -32,7 +38,11 @@
 
                 </li>
                 <li class="nav-item">
+
+                  <a class="nav-link" href="#about">About </a>
+
                   <a class="nav-link" href="#container welcome">About </a>
+
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#health">Services </a>
@@ -79,51 +89,54 @@
 
     <!-- Main Section -->
    
-    <section class="container welcome">
-      <div class="row">
-        <!-- Row div -->
-        <div class="col-lg-3 col-md-3 col-sm-6 img1">
-          <img src="/variation-ten/src/IMAGES/c1.png" alt="Man Cartoon Standing">
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 img2">
-          <img src="/variation-ten/src/IMAGES/c2.png" alt="Female Cartoon Standing">
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 welcome-info">
-          <!-- Inner Section -->
-          <div class="heading">
-            <h1>Welcome to the Envato care</h1>
-            <p>The Classic Standard of Health Care</p>
-            <hr class="line">
+    <section id="about" class="welcome">
+      <div class="container">
+        <div class="row">
+          <!-- Row div -->
+          <div class="col-lg-3 col-md-3 col-sm-6 img1" data-aos="fade-left" data-aos-delay="50" data-aos-duration="800">
+            <img src="/variation-ten/src/IMAGES/c1.png" alt="Man Cartoon Standing">
           </div>
-          <div class="heading-section">
-            <!--end of section Info-->
-            <div class="heading-section-info">
-              <h1>Emergency Help</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporinc
-                ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex
-                ercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit</p>
-            </div>
-            <div class="heading-section-info">
-              <h1>Team of Professionals</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporinc
-                ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex
-                ercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit</p>
-            </div>
-            <div class="heading-section-info">
-              <h1>Free Consultation</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporinc
-                ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex
-                ercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit</p>
-            </div>
-            <!--end of section Info-->
+          <div class="col-lg-3 col-md-3 col-sm-6 img2" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1200">
+            <img src="/variation-ten/src/IMAGES/c2.png" alt="Female Cartoon Standing">
           </div>
-          <!-- Inner Section -->
+          <div class="col-lg-6 col-md-6 col-sm-12 welcome-info">
+            <!-- Inner Section -->
+            <div class="heading" data-aos="fade-right" data-aos-delay="50" data-aos-duration="800">
+              <h1>Welcome to the Envato care</h1>
+              <p>The Classic Standard of Health Care</p>
+              <hr class="line">
+            </div>
+            <div class="heading-section">
+              <!--end of section Info-->
+              <div class="heading-section-info" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                <h1>Emergency Help</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporinc
+                  ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex
+                  ercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                  dolor in reprehenderit in voluptate velit</p>
+              </div>
+              <div class="heading-section-info" data-aos="fade-right" data-aos-delay="120" data-aos-duration="1200">
+                <h1>Team of Professionals</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporinc
+                  ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex
+                  ercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                  dolor in reprehenderit in voluptate velit</p>
+              </div>
+              <div class="heading-section-info" data-aos="fade-right" data-aos-delay="140" data-aos-duration="1400">
+                <h1>Free Consultation</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporinc
+                  ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex
+                  ercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                  dolor in reprehenderit in voluptate velit</p>
+              </div>
+              <!--end of section Info-->
+            </div>
+            <!-- Inner Section -->
+          </div>
+          <!-- Row div end-->
         </div>
-        <!-- Row div end-->
       </div>
+      
 
     </section>
     <!-- Welcome End Section -->
@@ -132,7 +145,7 @@
     <section id="health">
       <div class="container">
         <!-- Top Header -->
-        <div class="desc-header text-center">
+        <div class="desc-header text-center" data-aos="fade-left" data-aos-delay="50" data-aos-duration="800">
           <h1>Health Services</h1>
           <p>The Classic Standard of Health Care</p>
           <hr class="line">
@@ -142,7 +155,7 @@
         <!-- Description -->
         <div class="row desc">
           <!-- Row Count 1 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 d-flex">
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="50" data-aos-duration="800">
             <img class="mr-3"  src="/variation-ten/src/IMAGES/contact.png" alt="">
             <div class="content-info">
               <h1>Emergency Call</h1>
@@ -152,7 +165,7 @@
           <!-- Row Count 1 end-->
 
           <!-- Row Count 2-->
-          <div class="col-lg-4 col-md-6 col-sm-12 d-flex">
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="200" data-aos-duration="1200">
             <img class="mr-3"  src="/variation-ten/src/IMAGES/faceMask.png" alt="">
               
             <div class="content-info">
@@ -163,7 +176,7 @@
           <!-- Row Count 2 end-->
 
           <!-- Row Count 3 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 d-flex">
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="350" data-aos-duration="1600">
             <img class="mr-3"  src="/variation-ten/src/IMAGES/heart.png" alt="">
               
               
@@ -175,7 +188,7 @@
           <!-- Row Count  3 end-->
 
           <!-- Row Count 4-->
-          <div class="col-lg-4 col-md-6 col-sm-12 d-flex">
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="500" data-aos-duration="2000">
             <img class="mr-3"  src="/variation-ten/src/IMAGES/freecareservice.png" alt="">
               
             <div class="content-info">
@@ -186,7 +199,7 @@
           <!-- Row Count 4 end-->
 
           <!-- Row Count 5 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 d-flex">
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="650" data-aos-duration="2000">
             <img class="mr-3" src="/variation-ten/src/IMAGES/drugsHealthCare.png" alt="">
               
             <div class="content-info">
@@ -197,7 +210,7 @@
           <!-- Row Count 5 end -->
 
           <!-- Row Count 6-->
-          <div class="col-lg-4 col-md-6 col-sm-12 d-flex">
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="800" data-aos-duration="2400">
             <img class="mr-3" src="/variation-ten/src/IMAGES/ambulance.png" alt="">
               
             <div class="content-info">
@@ -216,7 +229,7 @@
     <section id="product">
       <div class="container">
         <!-- Top Header -->
-        <div class="desc-header text-center">
+        <div class="desc-header text-center" data-aos="zoom-in" data-aos-easing="ease-out-sine" data-aos-delay="50" data-aos-duration="600">
           <h1>Products We Provide</h1>
           <p>Pharmaceutical Sciences</p>
           <hr class="line">
@@ -224,27 +237,31 @@
         <!-- Top Header -->
 
         <!-- Button Section -->
-        <div class="btn-container text-center">
-          <button type="button" class="btn filter-btn active mr-3" data-id="all">All</button>
-          <button type="button" class="btn filter-btn mr-3" data-id="medicalMask">Medical Mask</button>
-          <button type="button" class="btn filter-btn mr-3" data-id="tablets">Tablets</button>
-          <button type="button" class="btn filter-btn mr-3" data-id="gadgets">Gadgets</button>
+        <div class="btn-container text-center"  data-aos="flip-up" data-aos-easing="ease-out-sine" data-aos-delay="50" data-aos-duration="600">
+         
+            <button type="button" class="btn filter-btn active mr-3" data-id="all" >All</button>
+            <button type="button" class="btn filter-btn mr-3" data-id="medicalMask" >Medical Mask</button>
+            <button type="button" class="btn filter-btn mr-3" data-id="tablets" >Tablets</button>
+            <button type="button" class="btn filter-btn mr-3" data-id="gadgets" >Gadgets</button>
+         
         </div>
         <!-- Button End Section -->
 
         <!-- Row -->
         <div class="row">
           <!-- Row start -->
-          <div class="col-lg-3 col-md-6 col-sm-12 menu">
+          <div class="col-lg-3 col-md-6 col-sm-12 menu" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
             <img src="/IMAGES/dietTea.png" alt="Diet Tea">
-            <p>Diet Tea</p>
-            <span>₦10,000</span>
+            <div class="content mt-3 ml-3">
+              <p>Diet Tea</p>
+              <span>₦10,000</span>
+            </div>
             <a href="#" class="addCart"><i class="fas fa-cart-plus"></i></a>
           </div>
           <!-- Row End -->
 
           <!-- Row start -->
-          <div class="col-lg-3 col-md-6 col-sm-12 menu">
+          <div class="col-lg-3 col-md-6 col-sm-12 menu" data-aos="fade-up" data-aos-delay="150" data-aos-duration="900">
             <img src="/IMAGES/BPreader.png" alt="BP Reader">
             <p>BP Reader</p>
             <span>₦120,000</span>
@@ -253,7 +270,7 @@
           <!-- Row End -->
 
           <!-- Row start -->
-          <div class="col-lg-3 col-md-6 col-sm-12 menu">
+          <div class="col-lg-3 col-md-6 col-sm-12 menu" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000">
             <img src="/IMAGES/SexBooster.png" alt="Sex Booster">
             <p>Sex Booster</p>
             <span>₦10,000</span>
@@ -262,7 +279,7 @@
           <!-- Row End -->
 
           <!-- Row start -->
-          <div class="col-lg-3 col-md-6 col-sm-12 menu">
+          <div class="col-lg-3 col-md-6 col-sm-12 menu" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1100">
             <img src="/IMAGES/panset.png" alt="Pan Set">
             <p>Pan Set</p>
             <span>₦10,000</span>
@@ -270,7 +287,7 @@
           </div>
           <!-- Row End -->
           <!-- Row start -->
-          <div class="col-lg-3 col-md-6 col-sm-12 menu">
+          <div class="col-lg-3 col-md-6 col-sm-12 menu" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1200">
             <img src="/IMAGES/sinussmall.png" alt="Sinus">
             <p>Sinus</p>
             <span>₦110,000</span>
@@ -279,7 +296,7 @@
           <!-- Row End -->
 
           <!-- Row start -->
-          <div class="col-lg-3 col-md-6 col-sm-12 menu">
+          <div class="col-lg-3 col-md-6 col-sm-12 menu" data-aos="fade-up" data-aos-delay="550" data-aos-duration="1300">
             <img src="/IMAGES/soab.png" alt="soab">
             <p>Soap</p>
             <span>₦80,000</span>
@@ -288,7 +305,7 @@
           <!-- Row End -->
 
           <!-- Row start -->
-          <div class="col-lg-3 col-md-6 col-sm-12 menu">
+          <div class="col-lg-3 col-md-6 col-sm-12 menu" data-aos="fade-up" data-aos-delay="650" data-aos-duration="1400">
             <img src="/IMAGES/bodybuilder.png" alt="Body Builder">
             <p>Body Builder</p>
             <span>₦10,000</span>
@@ -297,7 +314,7 @@
           <!-- Row End -->
 
           <!-- Row start -->
-          <div class="col-lg-3 col-md-6 col-sm-12 menu">
+          <div class="col-lg-3 col-md-6 col-sm-12 menu" data-aos="fade-up" data-aos-delay="750" data-aos-duration="1600">
             <img src="/IMAGES/goss.png" alt="Goss">
             <p>Goss</p>
             <span>₦5,000</span>
@@ -332,8 +349,8 @@
           <div class="tab-pane fade active show" id="profile-cart" role="tabpanel" aria-labelledby="profile-tab-classic">
             
             <!-- Row of Header Content -->
-            <div class="row cart-head">
-              <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="row cart-head" data-aos="fade-left" data-aos-delay="50" data-aos-duration="400">
+              <div class="col-lg-3 col-md-3 col-sm-3" >
                 <h1>Product</h1>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-3">
@@ -494,7 +511,7 @@
     <section id="contact">
       <div class="container">
         <!-- Top Header -->
-        <div class="desc-header text-center">
+        <div class="desc-header text-center" data-aos="flip-up" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-duration="500">
           <h1>We're always eager to hear from you!</h1>
           <p>You can call us in working time or visit our office. All mails will get the response
             within 24 hours. Love to hear from you! </p>
@@ -502,11 +519,10 @@
         </div>
         <!-- Top Header -->
         <!-- Content Contact -->
-        <div class="row contact-desc">
+        <div class="row contact-desc text-center">
           <!-- Item -->
-          <div class="col-lg-4 col-md-4 col-sm-12 d-flex">
-            <img class="mr-3"  src="/variation-ten/src/IMAGES/contact.png" alt=""> 
-              
+          <div class="mb-3 col-lg-4 col-md-4 col-sm-12" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="50" data-aos-duration="500">
+            <img class="mr-3 mb-3"  src="/variation-ten/src/IMAGES/contact.png" alt=""> 
             <div class="content-info">
               <h1>Address</h1>
               <p>1800 Abbot Kinney Blvd. Unit D & E Wuse 2</p>
@@ -515,8 +531,8 @@
           <!-- Item end -->
 
           <!-- Item -->
-          <div class="col-lg-4 col-md-4 col-sm-12 d-flex">
-            <img class="mr-3"  src="/variation-ten/src/IMAGES/phone.png" alt="">   
+          <div class="mb-3 col-lg-4 col-md-4 col-sm-12 " data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="150" data-aos-duration="900">
+            <img class="mr-3 mb-3"  src="/variation-ten/src/IMAGES/phone.png" alt="">   
 
             <div class="content-info">
               <h1>Contact</h1>
@@ -528,8 +544,8 @@
           <!-- Item end -->
 
           <!-- Item -->
-          <div class="col-lg-4 col-md-4 col-sm-12 d-flex">
-            <img class="mr-3"  src="/variation-ten/src/IMAGES/calendar.png" alt="">             
+          <div class="mb-3 col-lg-4 col-md-4 col-sm-12 "  data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="150" data-aos-duration="1000">
+            <img class="mr-3 mb-3"  src="/variation-ten/src/IMAGES/calendar.png" alt="">             
             <div class="content-info">
               <h1>Hour of Operation</h1>
               <p>Monday - Friday: 09:00 - 20:00</p>
@@ -544,7 +560,7 @@
         <div class="enter-info container text-center">
           <h1>Ask us anything here</h1>
           <!-- Form Inputs -->
-          <div class="row form-group mb-5">
+          <div class="row form-group mb-5" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-delay="50" data-aos-duration="800">
             <div class="col-lg-6 col-md-6 col-sm-12">
               <input type="text"  class="form-control" placeholder="First Name" aria-describedby="helpId">
               <input type="email"  class="form-control" placeholder="Email" aria-describedby="helpId">
@@ -570,7 +586,7 @@
     <section id="testimonial">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5 col-md-12 col-sm-12 info">
+          <div class="col-lg-5 col-md-12 col-sm-12 info"  data-aos="fade-left" data-aos-easing="ease-out-back" data-aos-delay="50" data-aos-duration="1000">
             <!-- Top Header -->
             <div class="test-header ">
               <h1>What do Customers Say About Us?</h1>
@@ -620,7 +636,14 @@
     </footer>
     <!-- Footer -->
     <!-- Optional JavaScript -->
-    <script src="/variation-ten/src/JS/home1.js"></script>
+    <script src="/variation-ten/src/JS/variation-ten.js"></script>
+
+    <!-- AOS.js  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <!-- initialize AOS -->
+        <script>
+          AOS.init();
+        </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
