@@ -228,6 +228,9 @@ section .line{
    line-height: 25px;
    color: var(--textBlackColor);
 }
+.content{
+   margin-left: 10px !important;
+}
 #product  .menu span{
    font-weight: bold;
    font-size: 18px;
@@ -424,9 +427,8 @@ section .line{
    line-height: 22px;
    color: var(--textBlackColor);
 }
-#contact .contact-desc .d-flex i{
-   font-size: 100px ;
-   color: var(--secondaryColor) !important;
+#contact .contact-desc .d-flex{
+   min-height: 50vh !important;
 }
 
 .content-info h1{
@@ -441,6 +443,9 @@ section .line{
    margin-bottom: 4px !important;
    font-size: 16px;
    line-height: 22px;
+}
+#contact .enter-info{
+  margin-top: 50px;
 }
 #contact .enter-info h1{
    color: var(--primaryColor);
@@ -549,7 +554,12 @@ footer .footer-info {
   padding-bottom: 60px;
 }
 footer hr{
-   background: rgba(255, 255, 255, 0.19);
+   display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.19);
+    margin: 1em 0;
+    padding: 0;
 }
 footer h1{
    font-weight: bold;
@@ -619,13 +629,7 @@ footer .active{
    #follow-checkout .enter-info .btn{
       width: 100% !important;
    }
-   
-   #contact .contact-desc .d-flex img{
-     margin-right: 5px !important;
-   }
-   #contact .contact-desc .d-flex p{
-      font-size: 10px;
-   }
+  
 }
 @media only screen and (max-width: 767px){
    #contact .contact-desc {
@@ -681,13 +685,6 @@ footer .active{
    footer .row > div{
       margin-bottom: 70px;
       text-align: center;
-   }
-   #contact .contact-desc .d-flex{
-    text-align: center !important;
-    margin: auto !important;
-    font-size: 10px;
-    margin-bottom: 60px !important;
-
    }
    .welcome .welcome-info{
       margin-top: 50px;
@@ -763,11 +760,10 @@ footer .active{
       padding: 5px !important;
    }
    #cart .cart-head {
-     padding: 10px;
      margin: auto;
    }
    #cart .cart-head > div{
-      width:22% !important;
+      text-align: center;
    }
    
    #cart .cart-body{
@@ -779,5 +775,47 @@ footer .active{
    }
    #cart .cart-body .cart-button button{
       margin-top: 5px !important;
+   }
+}
+
+@media only screen and (max-width: 426px){
+   #cart .cart-head {
+      width: 100%;
+   }
+   #cart .cart-head h1{
+      font-weight: bold;
+      line-height: 21px;
+      font-size: 14px;
+      color: #333333;
+   }
+   #product .menu img{
+      width: 70%;
+   }
+   #product .menu img{
+      width: 70%;
+      height: 60%;
+      margin: auto 30px !important;
+   }
+   #product  .menu a{
+      position: absolute;
+      bottom: 27%;
+      right: 31%;
+      color: var(--primaryColor) !important;
+      font-size: 20px;
+   }
+   .content{
+      margin-left: 30px !important;
+   }
+   #product  .menu{
+      margin-bottom: 20px !important;
+   }
+}
+@media only screen and (max-width: 375px){
+   #product  .menu a{
+      position: absolute;
+      bottom: 24%;
+      right: 31%;
+      color: var(--primaryColor) !important;
+      font-size: 20px;
    }
 }
