@@ -1,9 +1,17 @@
 
 
-*{
-
+body{
+    position: relative;
 }
-
+.cart{
+    position: absolute;
+    top: 1.6%;
+    z-index: 10;
+    background-color: white;
+    width: 30vw;
+    right: 0;
+    display: none;
+}
 .navbar-expand-lg .navbar-collapse{
     justify-content: flex-end;
 }
@@ -150,5 +158,9 @@ footer{
     .main-section p{
         font-weight: bold !important;
          font-size: 10px;
+    }
+    .cart{
+        top: 3.05%;
+        width: 100vw;
     }
 }

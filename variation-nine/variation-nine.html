@@ -9,6 +9,7 @@
      <link rel="stylesheet" href="src/variation-nine.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <script src="src/variation-nine.js" defer></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light " style="color: white;">
@@ -26,7 +27,7 @@
             <a class="nav-item nav-link " href="">Product</a>
             <a class="nav-item nav-link " href="">Contact</a>
             <img src="assets/search (2).png" alt="" style=" width: 30px;" class="nav-item nav-link ">
-            <img src="assets/Icon 24 x24.png" alt="" style=" width: 30px;"  class="nav-item nav-link ">
+            <img src="assets/Icon 24 x24.png" alt="" style=" width: 30px;"  class="nav-item nav-link cart-cont">
           </div>
         </div>
       </nav>
@@ -263,7 +264,11 @@
     <p class="text-center" style="margin-bottom: 0; padding-bottom: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.19); padding-top: .5rem;"> Copyright © 2020 Evanto Care. All Rights Reserved</p>
   </div>
 </footer>
-<!-- <table>
+<section class="cart">
+  <p style="padding: 1rem; background-color: #092C4C;color: white; text-align: end; font-size: 20px; cursor: pointer;" class="close-me"> X </p>
+ 
+ 
+<table>
   <tr class="text-center">
     <th style="width: 30%;" >ITEM</th>
     <th style="width: 30%;">QUANTITY</th>
@@ -320,8 +325,36 @@
     <td></td>
   </tr>
 
-</table> -->
+</table>
+<p class="" style="background: #092C4C; color: white; padding: 1rem; margin-top: 1rem;">Payment Details</p>
+<form class="container">
+  <div class="form-group">
+    <label for="inputAddress">CARD NUMBER</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Valid Card Number" style="margin-top: 0;">
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-6">
+      <label for="inputEmail4"> EXPIRATION DATE</label>
+      <input type="email" class="form-control" id="inputEmail4" style="margin-top: 0;" placeholder=" MM / YY">
+    </div>
+    <div class="form-group col-6">
+      <label for="inputPassword4"> CV CODE</label>
+      <input type="password" class="form-control" id="inputPassword4" style="margin-top: 0;" placeholder="CVC">
+    </div>
+  </div>
  
+    <div class="form-group">
+      <label for="inputZip"> COUPON CODE </label>
+      <input type="text" class="form-control" id="inputZip" style="margin-top: 0;">
+    </div>
+
+  </div>
+  <p style="background: #092C4C; color: white; padding: 1rem; text-align: center;">Total : $40%</p>
+<p style="background:  #FF9948;; color: white; padding: 1rem; text-align: center;">Pay</p>
+</form>
+
+</section>
 
       
     <!-- Optional JavaScript -->
