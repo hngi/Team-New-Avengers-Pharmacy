@@ -171,8 +171,11 @@ window.addEventListener('DOMContentLoaded',()=>{
       return `
       <div class="col-lg-3 col-md-6 col-sm-12 menu">
         <img src="${item.img}" alt="${item.title}">
-        <p>${item.title}</p>
-        <span>₦${item.price},000</span>
+        <div class="content mt-3 ml-3">
+          <p>${item.title}</p>
+          <span>₦${item.price},000</span>
+        </div>
+        
         <a href="#" class="addCart"><i class="fas fa-cart-plus"></i></a>
       </div>
       `
