@@ -68,6 +68,11 @@ i.fa {
   justify-content: center;
   width: 100%;
 }
+@media (max-width: 991px) {
+  .hero {
+    height: 12.5rem;
+  }
+}
 .hero .hero-text {
   color: var(--textColor);
   max-width: 535px;
