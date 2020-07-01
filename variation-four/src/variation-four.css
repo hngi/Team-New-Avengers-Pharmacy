@@ -72,6 +72,13 @@ i.fa {
   .hero {
     height: 12.5rem;
   }
+  h1,
+  h2 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
 }
 .hero .hero-text {
   color: var(--textColor);
