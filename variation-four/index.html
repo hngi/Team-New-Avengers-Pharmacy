@@ -31,6 +31,7 @@
   <body>
     <div class="wrapper">
       <header>
+        <!-- Normal Nav -->
         <nav class="navbar navbar-expand-sm navbar-dark px-3 px-sm-5 py-2">
           <div class="logo">
             <img src="assets/envatocarelogo.png" alt="" />
@@ -66,28 +67,243 @@
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
-            <i class="fa fa-shopping-cart mx-2" aria-hidden="true"></i>
-            <i class="fa fa-search mx-2" aria-hidden="true"></i>
+            <i
+              class="fa fa-shopping-cart mx-2"
+              aria-hidden="true"
+              onclick="openCart()"
+            ></i>
+            <i
+              class="fa fa-search mx-2"
+              aria-hidden="true"
+              id="search-icon"
+              onclick="toggleSearch()"
+            ></i>
+            <form class="form-inline my-2 my-md-0 d-none mx-3" id="search">
+              <input class="form-control" type="text" placeholder="Search" />
+            </form>
           </div>
         </nav>
       </header>
+      <div id="mySidepanel" class="sidepanel mt-0">
+        <nav class="navbar navbar-expand-sm navbar-dark px-3 px-sm-5 py-2">
+          <div class="logo">
+            <img src="assets/envatocarelogo.png" alt="" />
+          </div>
+          <div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeCart()"
+              >&times;</a
+            >
+          </div>
+        </nav>
+        <div
+          class="container-fluid wrapper-cart px-5 py-3 justify-content-center"
+        >
+          <div class="cart mb-5">
+            <h3 class="mb-3">Cart (3 items)</h3>
+            <div class="cart-box my-3 row p-1 p-md-3">
+              <div class="cart-box-item cart-item col-6">
+                <p>ITEM</p>
+                <div class="item-flow row">
+                  <div class="item-flow-img col-12 col-md-3">
+                    <img
+                      src="assets/cart-amoxicillin.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="item-flow-details col-12 col-md-9">
+                    <p class="text-bold">Product: Amocillin Tablet</p>
+                    <span
+                      ><span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-box-box other-box col-6 pr-0 row">
+                <div class="cart-box-quantity col-12 col-md-6">
+                  <p class="text-md-center">QUANTITY</p>
+                  <select
+                    class="form-control form-control-lg mr-md-auto ml-md-auto"
+                  >
+                    <option selected="selected"><strong>1</strong></option>
+                    <option><strong>2</strong></option>
+                    <option><strong>3</strong></option>
+                  </select>
+                </div>
+                <hr class="d-block d-md-none" />
+                <div class="cart-box-subtotal col-12 col-md-6 text-md-center">
+                  <p>SUB TOTAL</p>
+                  <strong>$200.00</strong>
+                </div>
+              </div>
+            </div>
+            <div class="cart-box my-3 row p-1 p-md-3">
+              <div class="cart-box-item cart-item col-6">
+                <p>ITEM</p>
+                <div class="item-flow row">
+                  <div class="item-flow-img col-12 col-md-3">
+                    <img
+                      src="assets/cart-amocillin.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="item-flow-details col-12 col-md-9">
+                    <p class="text-bold">Product: Amocillin Tablet</p>
+                    <span
+                      ><span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-box-box other-box col-6 pr-0 row">
+                <div class="cart-box-quantity col-12 col-md-6">
+                  <p class="text-md-center">QUANTITY</p>
+                  <select
+                    class="form-control form-control-lg mr-md-auto ml-md-auto"
+                  >
+                    <option selected="selected"><strong>1</strong></option>
+                    <option><strong>2</strong></option>
+                    <option><strong>3</strong></option>
+                  </select>
+                </div>
+                <hr class="d-block d-md-none" />
+                <div class="cart-box-subtotal col-12 col-md-6 text-md-center">
+                  <p>SUB TOTAL</p>
+                  <strong>$700.00</strong>
+                </div>
+              </div>
+            </div>
+            <div class="cart-box my-3 row p-1 p-md-3">
+              <div class="cart-box-item cart-item col-6">
+                <p>ITEM</p>
+                <div class="item-flow row">
+                  <div class="item-flow-img col-12 col-md-3">
+                    <img
+                      src="assets/cart-benadryl.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="item-flow-details col-12 col-md-9">
+                    <p class="text-bold">Product: Benadoyl Syrup</p>
+                    <span
+                      ><span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-box-box other-box col-6 pr-0 row">
+                <div class="cart-box-quantity col-12 col-md-6">
+                  <p class="text-md-center">QUANTITY</p>
+                  <select
+                    class="form-control form-control-lg mr-md-auto ml-md-auto"
+                  >
+                    <option selected="selected"><strong>1</strong></option>
+                    <option><strong>2</strong></option>
+                    <option><strong>3</strong></option>
+                  </select>
+                </div>
+                <hr class="d-block d-md-none" />
+                <div class="cart-box-subtotal col-12 col-md-6 text-md-center">
+                  <p>SUB TOTAL</p>
+                  <strong>$1000.00</strong>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-end my-2">
+              <strong class="mx-3">TOTAL</strong>
+              <strong class="mx-3">$1900.00</strong>
+            </div>
+            <div class="cart-box submit-div p-3 row justify-content-end">
+              <button type="button" class="btn mx-3">
+                BACK
+              </button>
+              <button type="button" class="btn mx-3">
+                CHECKOUT
+              </button>
+            </div>
+          </div>
+
+          <div class="checkout">
+            <h3>CHECKOUT</h3>
+            <div class="checkout-box my-3 p-1 p-md-3 row">
+              <h4 class="text-bold col-12">1. ADDRESS DETAILS</h4>
+              <hr />
+              <div class="form-group col-12">
+                <textarea
+                  class="form-control"
+                  id="message"
+                  placeholder="Input text"
+                  rows="5"
+                ></textarea>
+              </div>
+            </div>
+            <div class="checkout-box my-3 p-1 p-md-3 row">
+              <h4 class="text-bold col-12">2. PAYMENT METHOD</h4>
+              <hr />
+              <div class="form-group col-12">
+                <div class="form-row">
+                  <div class="form-group col-12 col-md-7">
+                    <label for="inputName"><strong>CARD NAME</strong></label>
+                    <input type="text" class="form-control" id="inputName" />
+                  </div>
+                  <div class="form-group col-12 col-md-7">
+                    <label for="inputNumber"
+                      ><strong>CARD NUMBER</strong></label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="inputNumber"
+                    />
+                  </div>
+                  <div class="form-group col-12 col-md-7">
+                    <label for="inputDate"><strong>EXPIRY DATE</strong></label>
+                    <input type="date" class="form-control" id="inputDate" />
+                  </div>
+                  <div class="form-group col-12 col-md-7">
+                    <label for="inputCVV"><strong>CARD CVV</strong></label>
+                    <input type="password" class="form-control" id="inputCVV" />
+                  </div>
+                </div>
+                <button type="button" class="btn mx-3">
+                  PAY NOW
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <main role="main" class="main">
         <div class="hero container-fluid" id="home">
           <div class="hero-text">
             <h2>PHARMACY MADE EASY</h2>
-            <h2 class="bold">
+            <h4 class="bold">
               Refill, transfer your
               <span class="special-text">prescriptions</span> the simple way
-            </h2>
+            </h4>
           </div>
         </div>
         <div class="about container-fluid" id="about">
           <h1 class="text-center mt-4 mb-5">About us</h1>
-          <div class="about-boxes row px-2 px-md-4 mx-auto">
+          <div class="about-boxes row row-eq-height px-2 px-md-4 mx-auto">
             <div
-              class="about-box col-12 col-md-5 mr-2 mr-md-4 mb-4 ml-2 ml-md-4"
+              class="about-box col-12 col-md-5 mr-2 mr-md-4 mb-4 ml-2 ml-md-4 p-3 p-md-4"
             >
-              <h3>Who are we?</h3>
+              <h3 class="mb-5">Who are we?</h3>
               <p>
                 We are a team of healthcare professionals with medical nd
                 pharmaceutical exxperience of over 20 years.
@@ -99,9 +315,9 @@
               </p>
             </div>
             <div
-              class="about-box col-12 col-md-5 mr-2 mr-md-4 mb-4 ml-2 ml-md-4"
+              class="about-box col-12 col-md-5 mr-2 mr-md-4 mb-4 ml-2 ml-md-4 p-3 p-md-4"
             >
-              <h3>Who do we do?</h3>
+              <h3 class="mb-5">What do we do?</h3>
               <p>
                 We provide an online pharmacy platform for patients/ caregivers
                 and their relatives right from the comfort of their homes or
@@ -113,9 +329,9 @@
               </p>
             </div>
             <div
-              class="about-box col-12 col-md-5 mr-2 mr-md-4 mb-4 ml-2 ml-md-4"
+              class="about-box col-12 col-md-5 mr-2 mr-md-4 mb-4 ml-2 ml-md-4 p-3 p-md-4"
             >
-              <h3>Why do we do what we do?</h3>
+              <h3 class="mb-5">Why do we do what we do?</h3>
               <p>
                 <span class="text-special">To save your time:</span> Our goal is
                 to help all our clients manage theit time better by saving time
@@ -128,9 +344,9 @@
               </p>
             </div>
             <div
-              class="about-box col-12 col-md-5 mr-2 mr-md-4 mb-4 ml-2 ml-md-4"
+              class="about-box col-12 col-md-5 mr-2 mr-md-4 mb-4 ml-2 ml-md-4 p-3 p-md-4"
             >
-              <h3>Our Core Values</h3>
+              <h3 class="mb-5">Our Core Values</h3>
               <p>
                 Integrity
               </p>
@@ -154,7 +370,7 @@
         </div>
         <div class="services container-fluid mt-4 px-5 py-5" id="services">
           <h2 class="text-center font-weight-bold mb-5">Our Services</h2>
-          <div class="services-grids row">
+          <div class="services-grids row mr-n5 ml-n4 mr-md-n3 ml-nd-n3">
             <div
               class="services-grid col-12 col-md-6 my-5 d-md-flex flex-md-row-reverse row mr-md-4"
             >
@@ -280,7 +496,7 @@
           <h2 class="text-center font-weight-bold mb-5">RECENT PRODUCTS</h2>
           <div class="product-boxes row justify-content-center">
             <div
-              class="product-box col-xs-12 col-sm-5 col-md-3 m-3 pt-5 py-5 text-center d-flex flex-column justify-content-between"
+              class="product-box col-xs-12 col-sm-5 col-md-3 m-3 py-3 text-center d-flex flex-column justify-content-between"
             >
               <img src="assets/benadryl-syrup.png" alt="" />
               <div class="bottom align-self-center">
@@ -300,7 +516,7 @@
               </div>
             </div>
             <div
-              class="product-box col-xs-12 col-sm-5 col-md-3 m-3 pt-5 py-5 text-center d-flex flex-column justify-content-between"
+              class="product-box col-xs-12 col-sm-5 col-md-3 m-3 py-3 text-center d-flex flex-column justify-content-between"
             >
               <img src="assets/amoxicillin-tab.png" alt="" />
               <div class="bottom">
@@ -320,7 +536,7 @@
               </div>
             </div>
             <div
-              class="product-box col-xs-12 col-sm-5 col-md-3 m-3 pt-5 py-5 text-center d-flex flex-column justify-content-between"
+              class="product-box col-xs-12 col-sm-5 col-md-3 m-3 py-3 text-center d-flex flex-column justify-content-between"
             >
               <img src="assets/folic-acid.png" alt="" />
               <div class="bottom">
@@ -340,7 +556,7 @@
               </div>
             </div>
             <div
-              class="product-box col-xs-12 col-sm-5 col-md-3 m-3 pt-5 py-5 text-center d-flex flex-column justify-content-between"
+              class="product-box col-xs-12 col-sm-5 col-md-3 m-3 py-3 text-center d-flex flex-column justify-content-between"
             >
               <img src="assets/amatem-forte.png" alt="" />
               <div class="bottom">
@@ -360,7 +576,7 @@
               </div>
             </div>
             <div
-              class="product-box col-xs-12 col-sm-5 col-md-3 m-3 pt-5 py-5 text-center d-flex flex-column justify-content-between"
+              class="product-box col-xs-12 col-sm-5 col-md-3 m-3 py-3 text-center d-flex flex-column justify-content-between"
             >
               <img src="assets/gesomid-suspension.png" alt="" />
               <div class="bottom">
@@ -380,7 +596,7 @@
               </div>
             </div>
             <div
-              class="product-box col-xs-12 col-sm-5 col-md-3 m-3 pt-5 py-5 text-center d-flex flex-column justify-content-between"
+              class="product-box col-xs-12 col-sm-5 col-md-3 m-3 py-3 text-center d-flex flex-column justify-content-between"
             >
               <img src="assets/paracetamol-tablet.png" alt="" />
               <div class="bottom">
@@ -565,15 +781,17 @@
         </div>
       </main>
       <footer>
-        <div class="footer-area container-fluid px-5 py-5 row text-white">
-          <div class="footer-intro col-12 col-md-4 mb-3 mb-md-1">
+        <div
+          class="footer-area container-fluid px-4 px-md-5 py-5 row text-white"
+        >
+          <div class="footer-intro col-12 col-md-4 mb-5 mb-md-1">
             <h4><span class="special-footer-text">Envato Care</span></h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
               est, urna egestas viverra pellentesque a aenean nisi gravida.
             </p>
           </div>
-          <div class="footer-logo px-5 col-12 col-md-4 mb-3 mb-md-1">
+          <div class="footer-logo px-5 col-12 col-md-4 mb-5 mb-md-1">
             <img
               src="assets/footer-logo.png"
               alt=""
@@ -622,7 +840,6 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
-
     <script src="src/variation-four.js" async defer></script>
     <script
       async
