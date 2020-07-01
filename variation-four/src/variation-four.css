@@ -15,6 +15,9 @@
   --shadowEffect3shadow: 0px 4px 4px rgba(9, 44, 76, 0.13);
   --transition: all 1s linear;
 }
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -77,7 +80,7 @@ i.fa {
 }
 
 .hero-text h2 {
-  animation: bounce1 1s forwards ease-in-out;
+  animation: bounce1 s forwards ease-in-out;
   animation-iteration-count: 2;
 }
 @keyframes bounce1 {
@@ -317,4 +320,23 @@ footer .special-footer-text {
 .checkout button {
   background-color: var(--secondaryColor);
   color: var(--textColor);
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--secondaryColor); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 5px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
