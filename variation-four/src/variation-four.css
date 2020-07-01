@@ -338,5 +338,7 @@ footer .special-footer-text {
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: var(
+    --primaryColor
+  ); /* Add a dark-grey background on hover */
 }
