@@ -222,6 +222,10 @@ Contact Section Classes */
 .a-follow-option-icon {
   background-color: var(--primaryColor);
 }
+.a-contact-option-icon {
+  max-height: 70px;
+  max-width: 70px;
+}
 .a-contact-option .a-contact-option-icon {
   background-color: var(--primaryColor);
   display: flex;
