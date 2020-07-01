@@ -108,7 +108,7 @@ const checkout_content = `<section class="container contact mb-5">
         </div>
         <div class="mx-auto">
             <div class="form-group">
-                <div class="btn--action btn-primary">Checkout</div>
+                <div class="btn btn-primary">Checkout</div>
             </div>
         </div>
     </div>
