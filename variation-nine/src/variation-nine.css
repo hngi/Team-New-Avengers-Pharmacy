@@ -1,0 +1,166 @@
+
+
+body{
+    position: relative;
+}
+.cart{
+    position: absolute;
+    top: 1.6%;
+    z-index: 10;
+    background-color: white;
+    width: 30vw;
+    right: 0;
+    display: none;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+}
+.nav-item{
+    margin-right: 2rem;
+}
+.navbar{
+    background: #092C4C !important;
+    padding: 0 5rem !important;
+    font-family: 'Inter', sans-serif !important;
+}
+.navbar-light .navbar-brand,
+.nav-link{
+       color: white !important;
+}
+
+.main-section{
+    position: relative;
+   margin-bottom: 4rem;
+   font-family: 'Roboto', sans-serif !important;
+  
+}
+.main-section h1{
+     font-weight: bold !important;
+     font-size: 50px;
+}
+.main-section p{
+    font-weight: bold !important;
+     font-size: 20px;
+}
+.main-section div{
+    position: absolute;
+    padding: 0 5rem;
+    padding-right: 0;
+    top: 18%;
+    width: 600px;
+    color: #4F4F4F
+}
+.main-section div a{
+    text-decoration: none;
+    color: white;
+    padding: .8rem 2rem;
+    background: #F29948;
+}
+.about-us{
+    margin: 0 5rem;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: bold;
+}
+.about-us div{
+  width: 45%;
+}
+.about-us img{
+    width: 90%;
+}
+.card-deck{
+    max-width: 1300px !important;
+    margin: 0 auto !important;
+    padding-left: 3rem !important;
+    padding-right:  6rem !important;
+    margin-top: 2rem !important;
+    font-family: 'Inter', sans-serif !important;
+}
+.card-deck .btn{
+    background: #092C4C;
+border-radius: 7px;
+color : white
+}
+
+.google-map{
+ padding-left: 0 !important;
+ position: relative;
+}
+.google-map div{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+.google-map div img{
+    padding: 1rem;
+    background: #FFFFFF;
+    display: block;
+}
+tr{
+    border-top: 1px solid #C4C4C4;
+}
+  
+.white-box{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+form{
+    margin: 2rem auto;
+}
+form input{
+    margin: 2rem auto;
+    padding: 1.8rem !important;
+}
+footer{
+    font-family: 'Inter', sans-serif;
+    background: #092C4C;
+    color: white;
+    padding-top: 3rem ;
+}
+.footer-envato{
+    padding-left: 7rem !important;
+}
+@media(max-width :700px ){
+    .main-section div{
+        width: 100%;
+        padding-left: 1rem;
+    }
+    .main-section h1{
+        font-size: 20px;
+    }
+    .main-section p{ 
+    width: 300px;
+    }
+    .main-section img{
+        height: 300px;
+    }
+    .navbar{
+      
+        padding: 0 1rem !important;
+    }
+    .card-deck{
+        padding: 1rem !important;
+    }
+    .map{
+ height: 200px !important;
+    }
+    .about-us{
+        flex-direction: column;
+        margin: 0;
+        padding: 1rem;
+    }
+    .about-us div{
+        width: 100%;
+    }
+    .footer-envato{
+        padding-left: 1rem !important;
+    }
+    .main-section p{
+        font-weight: bold !important;
+         font-size: 10px;
+    }
+    .cart{
+        top: 3.05%;
+        width: 100vw;
+    }
+}
