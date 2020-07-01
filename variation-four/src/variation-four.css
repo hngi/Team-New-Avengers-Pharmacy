@@ -163,6 +163,10 @@ i.fa {
   max-width: 100%;
   height: auto;
 }
+.product-box:hover {
+  transform: scale(0.98);
+  filter: brightness(0.98);
+}
 .product-boxes .product-box .bottom .checked {
   /* position: absolute; */
   color: #092c4c;
