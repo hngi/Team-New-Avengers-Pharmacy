@@ -89,6 +89,10 @@ i.fa {
   background-color: var(--secondaryColor);
   color: var(--textColor);
 }
+.about-box:hover {
+  filter: brightness(1.2);
+  transform: scale(1.02);
+}
 .about-box h3 {
   text-align: center;
 }
