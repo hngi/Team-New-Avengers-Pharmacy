@@ -13,6 +13,7 @@
   --shadowEffect1shadow: 0px 10px 24px rgba(0, 0, 0, 0.1);
   --shadowEffect2shadow: 0px 5px 20px rgba(27, 30, 51, 0.2);
   --shadowEffect3shadow: 0px 4px 4px rgba(9, 44, 76, 0.13);
+  --transition: all 1s linear;
 }
 * {
   margin: 0;
@@ -73,6 +74,22 @@ i.fa {
 }
 .hero .hero-text .special-text {
   color: var(--primaryColor);
+}
+
+.hero-text h2 {
+  animation: bounce1 1s forwards ease-in-out;
+  animation-iteration-count: 2;
+}
+@keyframes bounce1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* About Section Classes */
