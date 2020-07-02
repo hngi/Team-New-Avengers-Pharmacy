@@ -49,6 +49,29 @@ h3 {
   font-weight: 500;
   font-size: 2rem;
 }
+@media (max-width: 991px) {
+  .hero {
+    /* height: 12.5rem; */
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .product-box p {
+    font-size: 16px;
+  }
+}
+.hero .hero-text {
+  /* max-width: 440px; */
+}
+.hero .hero-text .bold {
+  font-weight: bold;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -94,26 +117,6 @@ button.btn:focus {
   align-items: center;
   justify-content: center;
   width: 100%;
-}
-
-@media (max-width: 991px) {
-  .hero {
-    /* height: 12.5rem; */
-  }
-  h1,
-  h2,
-  h3 {
-    font-size: 20px;
-  }
-  h4 {
-    font-size: 16px;
-  }
-}
-.hero .hero-text {
-  /* max-width: 440px; */
-}
-.hero .hero-text .bold {
-  font-weight: bold;
 }
 
 .hero-text h2 {
