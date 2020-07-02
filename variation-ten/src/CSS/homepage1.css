@@ -804,6 +804,21 @@ footer .active{
 }
 
 @media only screen and (max-width: 426px){
+   body{
+      overflow-x: hidden !important;
+   }
+   #envantoCareHeader,
+   #contact,
+   #testimonial,
+   #about,
+   #health,
+   #product,
+   footer,
+   #cart{
+      width: 100%;
+      height: 100%;
+      margin: auto !important;
+   }
    #cart .cart-head {
       width: 100%;
    }
