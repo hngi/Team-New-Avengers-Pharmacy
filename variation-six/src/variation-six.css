@@ -14,12 +14,12 @@ html {
 }
 
 h1 {
-    font-size: calc(14px + (36 - 14) * ((100vw - 320px) / (1600 - 320)));
-    line-height: calc(17px + (41 - 17) * ((100vw - 320px) / (1600 - 320)));
+    font-size: calc(16px + (48 - 16) * ((100vw - 320px) / (1600 - 320)));
+    line-height: calc(20px + (58 - 20) * ((100vw - 320px) / (1600 - 320)));
 }
 
 h2 {
-    font-size: calc(13px + (26 - 13) * ((100vw - 320px) / (1600 - 320)));
+    font-size: calc(13px + (32 - 13) * ((100vw - 320px) / (1600 - 320)));
     line-height: calc(17px + (41 - 17) * ((100vw - 320px) / (1600 - 320)));
 }
 
@@ -32,12 +32,33 @@ h6 {
     font-size: calc(8px + (18 - 8) * ((100vw - 320px) / (1600 - 320)));
 }
 
+.bg-primary {
+    background: #0146C0;
+}
+
 .font-weight-bold-sm {
     font-weight: 600;
 }
 
+.font-weight-bold {
+    font-weight: 800;
+}
+
 .font-weight-bold-xs {
     font-weight: 400;
+}
+
+.text-dark-sm {
+    color: #4F4F4F;
+}
+
+.text-border {
+    border-bottom: 3px solid #0146C0;
+    padding-bottom: 5px;
+}
+
+.border-radius {
+    border-radius: 8px;
 }
 
 p {
@@ -46,11 +67,12 @@ p {
 }
 
 .small {
-    font-size: calc(8px + (16 - 8) * ((100vw - 320px) / (1600 - 320)));
+    font-size: calc(9px + (16 - 8) * ((100vw - 320px) / (1600 - 320)));
     font-weight: lighter;
 }
 
 .navbar {
+    background: rgba(255, 255, 255, 0.86);
     position: absolute;
     width: 100%;
     z-index: 1;
@@ -78,34 +100,43 @@ p {
     background-color: #fff;
 }
 
-.h-section {
-    padding-top: 60px;
-}
-
 .h-section h1, .h-section h6 {
     font-weight: 600;
-    width: 150%;
-}
-
-.h-section .small {
-    width: 170%;
 }
 
 .btn {
-    width: calc(100px + (165 - 100) * ((100vw - 320px) / (1600 - 320)));
-    padding: calc(10px + (17 - 10) * ((100vw - 320px) / (1600 - 320))) 0;
-    font-size: calc(10px + (17 - 10) * ((100vw - 320px) / (1600 - 320)));
+    width: calc(100px + (150 - 100) * ((100vw - 320px) / (1600 - 320)));
+    padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1600 - 320))) 0;
+    font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (1600 - 320)));
+}
+
+.btn-outline {
+    border: 1px solid #455A64;
 }
 
 .hero__img {
-    background-image: url('../assets/hero.png');
+    background-image: url('../assets/newhero.png');
     background-size: cover;
+    padding-top: calc(80px + (250 - 80) * ((100vw - 320px) / (1600 - 320)));
+    padding-bottom: calc(50px + (200 - 50) * ((100vw - 320px) / (1600 - 320)));
+}
+
+.welcome {
+    padding: 10px calc(20px + (150 - 20) * ((100vw - 320px) / (1600 - 320)));
+}
+
+.phone__section {
+    border-radius: 8px;
 }
 
 .about__img {
-    background-image: url('../assets/hero2.png');
+    background-image: url('../assets/newhero2.png');
     background-size: cover;
-    border-radius: 10px;
+}
+
+.bg-trans {
+    box-shadow: 0px 4px 4px rgba(9, 44, 76, 0.13);
+    background-color: rgba(255, 255, 255, .9);
 }
 
 .cart {
@@ -191,9 +222,6 @@ hr {
 }
 
 @media screen and (min-width: 576px) {
-    .h-section h1, .h-section h6, .h-section .small {
-        width: 120%;
-    }
     .collapse {
         background-color: transparent;
     }
@@ -202,10 +230,6 @@ hr {
 @media screen and (min-width: 768px) {
     .navbar {
         position: absolute;
-    }
-    .h-section {
-        padding-top: 120px;
-        padding-bottom: 50px;
     }
 }
 
@@ -216,18 +240,7 @@ hr {
     .navbar-logo {
         width: 100%;
     }
-    .h-section {
-        padding-top: 170px;
-        padding-bottom: 70px;
-    }
-    .h-section h1, .h-section h6, .h-section .small {
-        width: 120%;
-    }
 }
 
 @media screen and (min-width:1200px) {
-    .h-section {
-        padding-top: 230px;
-        padding-bottom: 180px;
-    }
 }

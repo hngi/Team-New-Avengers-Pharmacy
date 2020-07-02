@@ -6,16 +6,20 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <link rel="stylesheet" href="./src/variation-six.css">
+    <script>
+        new WOW().init();
+    </script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-transparent px-0 px-md-5 py-3 py-lg-1">
+    <nav class="navbar navbar-expand-md navbar-light px-0 px-md-4 py-3 py-lg-1">
         <a class="navbar-brand pl-4" href="#"><img src="./assets/envatologo.png" class="navbar-logo" alt=""></a>
         <button class="navbar-toggler pr-4" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,57 +27,120 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item mx-1 mx-lg-3 active">
+                <li class="nav-item mx-4 mx-md-1 mx-lg-2 active">
                     <a class="nav-link text-primary" href="#">Home</a>
                 </li>
-                <li class="nav-item mx-1 mx-lg-3">
+                <li class="nav-item mx-4 mx-md-1 mx-lg-2">
                     <a class="nav-link" href="#About">About</a>
                 </li>
-                <li class="nav-item mx-1 mx-lg-3">
+                <li class="nav-item mx-4 mx-md-1 mx-lg-2">
                     <a class="nav-link" href="#Product">Product</a>
                 </li>
-                <li class="nav-item mx-1 mx-lg-3">
+                <li class="nav-item mx-4 mx-md-1 mx-lg-2">
                     <a class="nav-link" href="#Service">Services</a>
                 </li>
-                <li class="nav-item mx-1 mx-lg-3">
+                <li class="nav-item mx-4 mx-md-1 mx-lg-2">
                     <a class="nav-link" href="#Contact">Contact</a>
                 </li>
-                <li class="nav-item mx-2">
+                <li class="nav-item mx-4 mx-md-2">
                     <a class="nav-link" href="#cart"><img src="./assets/cart.png" alt=""></a>
                 </li>
-                <li class="nav-item mx-2">
+                <li class="nav-item mx-4 mx-md-2">
                     <a class="nav-link" href="#"><img src="./assets/search.png" alt=""></a>
                 </li>
             </ul>
         </div>
     </nav>
-    <section class="container-fluid welcome">
+    <section class="container-fluid hero__img">
         <div class="row">
-            <div class="col-4 col-md-5 pl-md-5 h-section">
-                <h6>Welcome to Evanto Care</h6>
+            <div class="col-7 col-md-6 col-lg-5 pl-md-5 h-section wow animate__zoomIn" data-wow-duration="2s">
                 <h1>All The Services You Expect From A Phamacy</h1>
-                <p class="small">We are a pharmaceutical company committed to setting new standards in health care and
-                    providing the people accessto high-quality medicine.</p>
+                <p>We are a pharmaceutical company committed to setting new standards in health care and
+                    providing the people access to high-quality medicine.</p>
                 <button class="btn btn-primary">Get Started</button>
             </div>
-            <div class="col-8 col-md-7 hero__img"></div>
+            <div class="col-5 col-md-6 col-lg-7"></div>
         </div>
     </section>
-    <section class="container-fluid about mt-5" id="About">
-        <h1 class="text-center font-weight-bold-sm d-md-none my-5">About Envato</h1>
-        <div class="row pl-4 pl-md-5 mt-5">
-            <div class="col-6 col-md-5 about__img">
+    <section class="container-fluid my-5 welcome text-dark-sm">
+        <h2 class="text-center font-weight-bold">Welcome to Envato</h2>
+        <p class="text-center">Standa<span class="text-border">rd of Heal</span>th Care</p>
+        <div class="row mt-3 mt-md-5">
+            <div class="col-12 col-md-6 col-lg-4 my-2 my-md-0">
+                <div class="row align-items-start">
+                    <div class="col-2 col-lg-3 bg-primary d-flex justify-content-center py-2 phone__section"><img
+                            src="./assets/phone.png" alt="" class="img-fluid"></div>
+                    <div class="col-9">
+                        <h3 class="font-weight-bold-sm">Emergency Call</h3>
+                        <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-6 col-md-7 pl-md-5 py-md-5">
-                <h1 class="d-none d-md-block">About Envato</h1>
-                <p class="small text-primary">FULL SERVICE PHARMACY</p>
-                <h3 class="font-weight-bold-sm">Pharmaceutial care for you & your family.</h3>
-                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut ut ornare arcu fusce
-                    consequat lectus. Platea mi ut netus pharetra, ipsum. Eget condimentum ultrices duis id non
-                    ultrices. Et in proin eget molestie etiam laoreet aliquam velit. Quisque sagittis in integer quis
-                    amet ultrices. Egestas non morbi gravida consectetur morbi est.
-                    Leo risus integer netus donec et. Urna, enim, enim, feugiat sed.</p>
-                <button class="btn btn-primary">Get Started</button>
+            <div class="col-12 col-md-6 col-lg-4 my-2 my-md-0">
+                <div class="row align-items-start">
+                    <div class="col-2 col-lg-3 bg-primary d-flex justify-content-center py-2 phone__section"><img
+                            src="./assets/phone.png" alt="" class="img-fluid"></div>
+                    <div class="col-9">
+                        <h3 class="font-weight-bold-sm">Medication Support</h3>
+                        <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 my-2 my-md-0">
+                <div class="row align-items-start">
+                    <div class="col-2 col-lg-3 bg-primary d-flex justify-content-center py-2 phone__section"><img
+                            src="./assets/phone.png" alt="" class="img-fluid"></div>
+                    <div class="col-9">
+                        <h3 class="font-weight-bold-sm">Health Consultant</h3>
+                        <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 my-2 my-md-0">
+                <div class="row align-items-start">
+                    <div class="col-2 col-lg-3 bg-primary d-flex justify-content-center py-2 phone__section"><img
+                            src="./assets/phone.png" alt="" class="img-fluid"></div>
+                    <div class="col-9">
+                        <h3 class="font-weight-bold-sm">Emergency Call</h3>
+                        <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 my-2 my-md-0">
+                <div class="row align-items-start">
+                    <div class="col-2 col-lg-3 bg-primary d-flex justify-content-center py-2 phone__section"><img
+                            src="./assets/phone.png" alt="" class="img-fluid"></div>
+                    <div class="col-9">
+                        <h3 class="font-weight-bold-sm">Emergency Call</h3>
+                        <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 my-2 my-md-0">
+                <div class="row align-items-start">
+                    <div class="col-2 col-lg-3 bg-primary d-flex justify-content-center py-2 phone__section"><img
+                            src="./assets/phone.png" alt="" class="img-fluid"></div>
+                    <div class="col-9">
+                        <h3 class="font-weight-bold-sm">Emergency Call</h3>
+                        <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid about mt-5 about__img" id="About">
+        <div class="row px-5 px-md-5 py-5">
+            <div class="col-12 col-md-8 col-lg-6 col-lg-5 py-5 px-5 bg-trans text-dark-sm border-radius wow animate__animated animate__flipInX" data-wow-duration="1s">
+                <h2 class="font-weight-bold">About Envato</h2>
+                <p class=""><span class="text-border">The Classic Standa</span>rd of Health Care</p>
+                <p class="small mt-5 mt-md-4">We are a pharmaceutical company committed to setting
+                    new standards in health care and providing the people 
+                    accessto high-quality medicine.  ad minim veniam, quis
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis
+                    </p>
+                <button class="btn btn-outline">Get Started</button>
             </div>
         </div>
     </section>
@@ -139,7 +206,8 @@
         </div>
     </section>
     <section class="container mt-lg-4">
-        <h1 class="text-center font-weight-bold-sm my-5 cart__hero"><span id="cart">Cart</span><span id="checkout">Checkout</span>
+        <h1 class="text-center font-weight-bold-sm my-5 cart__hero"><span id="cart">Cart</span><span
+                id="checkout">Checkout</span>
         </h1>
         <div class="row" id="cart-container"></div>
     </section>
@@ -215,7 +283,8 @@
             </div>
             <div class="col col-md-4 col-lg-3 mt-3">
                 <h2 class="font-weight-bold">Contact</h2>
-                <p class="font-weight-bold-xs"><span class="font-weight-light">Address:</span> 1901 Thornridge Cir. Shail</p>
+                <p class="font-weight-bold-xs"><span class="font-weight-light">Address:</span> 1901 Thornridge Cir.
+                    Shail</p>
                 <p class="font-weight-bold-xs"><span class="font-weight-light">Phone:</span> (603) 555-0123</p>
                 <p class="font-weight-bold-xs"><span class="font-weight-light">Email:</span> Envantocare@info.com</p>
             </div>
