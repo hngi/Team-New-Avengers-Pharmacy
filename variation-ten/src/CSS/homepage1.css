@@ -317,7 +317,7 @@ section .line{
    color:var(--textBlackColor);
    margin-top: 60px;
 }
-#cart .cart-body .cart-button button{
+#cart .cart-body .cart-button .switch-btn{
    font-weight: bold;
    padding: 0 !important;
    line-height: 30px;
@@ -328,7 +328,7 @@ section .line{
    background: var(--neutralColor);
    height: 46px;
 }
-#cart .cart-body .cart-button button:focus{
+#cart .cart-body .cart-button .switch-btn:focus{
    outline: none;
 }
 #cart .cart-body .price p{
@@ -341,11 +341,11 @@ section .line{
 #cart .cart-body .cart-button .add-btn{
    color: var(--secondaryColor);
    background: var(--primaryColor);
-   width: 33.30%;
    margin-top: 6px ;
    padding: 7px;
    height: 46px;
 }
+
 #cart .cart-body .cart-button .sub-btn{
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -364,7 +364,8 @@ section .line{
 #follow-checkout .enter-info .form-group{
    padding: 50px !important;
 }
-#follow-checkout .enter-info input{
+#follow-checkout .enter-info input,
+#follow-checkout .enter-info select{
    width: 100% !important;
    margin-bottom: 20px;
    border-radius: 8px !important;
@@ -568,14 +569,14 @@ footer{
    margin-top: auto !important;
 }
 footer .container{
-   min-height: 80vh !important;
+   min-height: 60vh !important;
    width: 100% !important;
    display: flex !important;
    flex-direction: column !important;
 }
 footer .footer-info {
-  padding-top: 150px;
-  padding-bottom: 60px;
+  padding-top: 120px;
+  padding-bottom: 40px;
 }
 footer hr{
    display: block;
@@ -803,6 +804,21 @@ footer .active{
 }
 
 @media only screen and (max-width: 426px){
+   body,html{
+      overflow-x: hidden !important;
+   }
+   #envantoCareHeader,
+   #contact,
+   #testimonial,
+   #about,
+   #health,
+   #product,
+   footer,
+   #cart{
+      width: 100%;
+      height: 100%;
+      margin: auto !important;
+   }
    #cart .cart-head {
       width: 100%;
    }
@@ -835,6 +851,20 @@ footer .active{
    }
 }
 @media only screen and (max-width: 375px){
+   footer .footer-info > div {
+      margin-bottom: 30px !important;
+      text-align: left !important;
+      font-size: 16px !important;
+      line-height: 22px !important;
+    }
+    footer .footer-info {
+      padding-top: 50px;
+      
+    }
+    /* Footer */
+   footer{
+      padding: 20px;
+   }
    #product  .menu a{
       position: absolute;
       bottom: 24%;
