@@ -295,7 +295,9 @@ footer .special-footer-text {
   font-size: 36px;
   margin-left: 50px;
 }
-
+.sidepanel::-webkit-scrollbar {
+  width: 3px;
+}
 .cart-box {
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
@@ -320,9 +322,9 @@ footer .special-footer-text {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* .wrapper-cart {
+.wrapper-cart {
   max-width: 1250px;
-} */
+}
 .cart-box .form-control {
   width: 70%;
 }
