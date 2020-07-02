@@ -54,7 +54,14 @@ i.fa {
   color: var(--neutralColor);
   font-size: 24px;
 }
-
+button.btn:hover {
+  border: 0;
+  color: var(--textColor);
+}
+button.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
 /* Hero Section Classes */
 .hero {
   background-image: url('../assets/hero-img.png');
@@ -333,6 +340,9 @@ footer .special-footer-text {
 }
 
 /* Checkout Section */
+.checkout {
+  display: none;
+}
 .checkout-box {
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);

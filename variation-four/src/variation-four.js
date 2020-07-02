@@ -4,6 +4,7 @@ function openCart() {
 
 function closeCart() {
   document.getElementById('mySidepanel').style.width = '0';
+  document.getElementById('checkout').style.display = 'none';
 }
 
 function toggleSearch() {
@@ -32,4 +33,9 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleCheckout() {
+  document.getElementById('checkout').style.display = 'block';
+  window.location.href = '#checkout';
 }
