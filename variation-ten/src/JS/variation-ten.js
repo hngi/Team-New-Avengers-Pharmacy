@@ -132,7 +132,7 @@ const menu = [
     {
       id: 6,
       title: "Soab",
-      category: "tablet",
+      category: "tablets",
       price: 80,
       img: "/variation-ten/src/IMAGES/soab.png",
      },
