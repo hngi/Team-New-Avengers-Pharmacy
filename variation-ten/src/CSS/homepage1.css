@@ -804,7 +804,7 @@ footer .active{
 }
 
 @media only screen and (max-width: 426px){
-   body{
+   body,html{
       overflow-x: hidden !important;
    }
    #envantoCareHeader,
