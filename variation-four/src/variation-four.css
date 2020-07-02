@@ -282,16 +282,6 @@ footer .special-footer-text {
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
 }
 
-/* The sidepanel links */
-.sidepanel a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
 /* When you mouse over the navigation links, change their color */
 .sidepanel a:hover {
   color: #f1f1f1;
@@ -330,9 +320,9 @@ footer .special-footer-text {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.wrapper-cart {
+/* .wrapper-cart {
   max-width: 1250px;
-}
+} */
 .cart-box .form-control {
   width: 70%;
 }
