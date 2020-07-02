@@ -377,11 +377,11 @@
                 <h1>Pills</h1>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-3 cart-button">
-                <button class="switch-btn">
+                <div class="switch-btn">
                   <span class="sub-btn">-</span>
                   <span class="cart-value">5</span>
                   <span class="add-btn">+</span>
-                </button>
+                </div>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-3 price">
                 <p>
@@ -403,11 +403,11 @@
                 <h1>Body Builder</h1>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-3 cart-button">
-                <button class="switch-btn">
-                  <span class="sub-btn">-</span>
+                <div class="switch-btn">
+                  <button class="sub-btn">-</button>
                   <span class="cart-value">1</span>
-                  <span class="add-btn">+</span>
-                </button>
+                  <button class="add-btn">+</button>
+                </div>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-3 price">
                 <p>
@@ -429,11 +429,11 @@
                 <h1>Goss</h1>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-3 cart-button">
-                <button class="switch-btn">
+                <div class="switch-btn">
                   <span class="sub-btn">-</span>
                   <span class="cart-value">5</span>
                   <span class="add-btn">+</span>
-                </button>
+                </div>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-3 price">
                 <p>
@@ -461,15 +461,19 @@
                   <!-- Form Inputs -->
                   <div class="row form-group mb-5">
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                      <input type="text"  class="form-control" placeholder="First Name" aria-describedby="helpId">
-                      <input type="email"  class="form-control" placeholder="Email" aria-describedby="helpId">
+                      <input type="text"  class="form-control" placeholder="Name" aria-describedby="helpId">
+                      <input type="number" class="form-control" placeholder="Phone Number" aria-describedby="helpId">
+                      
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                      <input type="text" class="form-control" placeholder="Last Name" aria-describedby="helpId">
-                      <input type="number" class="form-control" placeholder="Phone Number" aria-describedby="helpId">
+                      <input type="email"  class="form-control" placeholder="Email" aria-describedby="helpId">
+                        <select class="form-control" name="" id="">
+                          <option selected>Time of Delivery <i class="fas fa-chevron-circle-down fa-2x"></i></option>
+                          <option>...</option>
+                        </select>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">
-                      <textarea class="form-control mt-3" placeholder="Your message here"  rows="3"></textarea>
+                      <textarea class="form-control mt-3" placeholder="Your Address"  rows="3"></textarea>
                       <a class="btn btn-block m-auto mt-3" href="#" role="button">Submit </a>
                     </div>
                   </div>
@@ -622,7 +626,7 @@
       <div class="container">
         <!-- Footer Info -->
         <div class="row footer-info">
-          <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="col-lg-4 col-md-4 col-sm-12 desc">
             <h1 class="active">Envato Care</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus est, urna egestas viverra pellentesque a aenean nisi gravida. Sed vel at sed leo volutpat elit ornare sit. Vulputate elementum ut habitasse orci egestas ultricies. </p>
           </div>
