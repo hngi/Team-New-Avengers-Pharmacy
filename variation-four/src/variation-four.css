@@ -55,7 +55,6 @@ i.fa {
   font-size: 24px;
 }
 button.btn:hover {
-  border: 0;
   color: var(--textColor);
 }
 button:focus {
