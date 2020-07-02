@@ -344,6 +344,7 @@ footer .special-footer-text {
 /* Checkout Section */
 .checkout {
   display: none;
+  max-width: 500px;
 }
 .checkout-box {
   background: #ffffff;
