@@ -26,6 +26,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  color: var(--primaryColor);
 }
 h1,
 h2,
@@ -34,15 +35,36 @@ h4,
 p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  font-size: 1.25rem;
 }
 h1 {
   font-weight: 500;
+  font-size: 3rem;
+}
+h2 {
+  font-weight: 500;
   font-size: 2.5rem;
+}
+h3 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.special-text {
+  color: var(--secondaryColor);
 }
 /* Navbar Classes */
 .navbar {
   background-color: var(--primaryColor);
   /* padding: 0.625rem 5rem 0.625rem 5rem; */
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--textColor);
 }
 .active .nav-link {
   color: var(--secondaryColor) !important;
@@ -66,20 +88,17 @@ button.btn:focus {
 }
 /* Hero Section Classes */
 .hero {
-  background-image: url('../assets/hero-img.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 25rem;
+  background-color: var(--neutralColor);
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
+
 @media (max-width: 991px) {
   .hero {
-    height: 12.5rem;
+    /* height: 12.5rem; */
   }
   h1,
   h2,
@@ -91,14 +110,10 @@ button.btn:focus {
   }
 }
 .hero .hero-text {
-  color: var(--textColor);
-  max-width: 535px;
+  /* max-width: 440px; */
 }
 .hero .hero-text .bold {
   font-weight: bold;
-}
-.hero .hero-text .special-text {
-  color: var(--primaryColor);
 }
 
 .hero-text h2 {
@@ -120,9 +135,29 @@ button.btn:focus {
 /* About Section Classes */
 .about {
   background-color: var(--neutralColor);
+  color: var(--primaryColor);
 }
-.about h1 {
+.about h1,
+.about h2 {
   font-weight: bold;
+}
+.about .divider {
+  border: 3px solid #f2994a;
+  display: inline-block;
+  width: 100px;
+
+  /* margin-left: 30px */
+}
+@media (max-width: 991px) {
+  .about .divider {
+    width: 50px;
+  }
+}
+.about img {
+  max-width: 90%;
+}
+.about div.centrehr {
+  text-align: center;
 }
 .about-boxes {
   justify-content: center;
@@ -140,7 +175,7 @@ button.btn:focus {
 }
 .about-box p {
 }
-.about .text-special {
+.text-special {
   color: var(--primaryColor);
 }
 
@@ -163,8 +198,8 @@ button.btn:focus {
   background-color: var(--neutralColor);
 }
 .product-boxes .product-box {
-  background-color: rgba(255, 255, 255, 0.3);
   border: 3px solid rgba(9, 44, 76, 0.4);
+  border-radius: 10px;
   position: relative;
 }
 .product-boxes .product-box img {
@@ -176,9 +211,17 @@ button.btn:focus {
   transform: scale(0.98);
   filter: brightness(0.98);
 }
-.product-boxes .product-box .bottom .checked {
+.product-boxes .product-box .bottom {
   /* position: absolute; */
-  color: #092c4c;
+  color: var(--primaryColor);
+  line-height: 13px;
+  font-weight: bold;
+}
+.product-boxes .product-box .bottom i.fa {
+  color: var(--primaryColor);
+}
+.product-boxes .product-box .bottom .greytext {
+  color: #4f4f4f;
 }
 .btn-primary {
   background-color: var(--secondaryColor);
@@ -196,6 +239,7 @@ Contact Section Classes */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 350px;
 }
 .contact-map {
   height: 300px;
@@ -281,6 +325,9 @@ footer .special-footer-text {
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
 }
+.sidepanel .navc {
+  background-color: var(--neutralColor);
+}
 
 /* When you mouse over the navigation links, change their color */
 .sidepanel a:hover {
@@ -294,9 +341,7 @@ footer .special-footer-text {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-}
-.sidepanel::-webkit-scrollbar {
-  width: 3px;
+  color: #092c4c;
 }
 .cart-box {
   background: #ffffff;
@@ -336,7 +381,6 @@ footer .special-footer-text {
 /* Checkout Section */
 .checkout {
   display: none;
-  max-width: 500px;
 }
 .checkout-box {
   background: #ffffff;
@@ -351,6 +395,24 @@ footer .special-footer-text {
   color: var(--textColor);
 }
 
+.checkoutcard {
+  background: #fcfcfc;
+  /* shadow effect 3 */
+
+  box-shadow: 0px 4px 4px rgba(9, 44, 76, 0.13);
+  border-radius: 8px;
+  height: 160px;
+  max-width: 275px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+.checkoutcard:hover {
+  cursor: pointer;
+  transform: filter(1.1);
+}
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */

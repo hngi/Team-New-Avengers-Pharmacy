@@ -26,7 +26,7 @@
     <div class="wrapper">
       <header>
         <!-- Normal Nav -->
-        <nav class="navbar navbar-expand-sm navbar-dark px-3 px-sm-5 py-2">
+        <nav class="navbar navbar-expand-md navbar-dark px-3 px-sm-5 py-2">
           <div class="logo">
             <img src="assets/envatocarelogo.png" alt="" />
           </div>
@@ -43,26 +43,26 @@
           </button>
           <div class="collapse navbar-collapse" id="care-navbar">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active mx-sm-2">
+              <li class="nav-item active mx-sm-2 mx-md-3">
                 <a class="nav-link" href="#home"
                   >Home <span class="sr-only">(current)</span></a
                 >
               </li>
-              <li class="nav-item mx-sm-2">
+              <li class="nav-item mx-sm-2 mx-md-3">
                 <a class="nav-link" href="#about">About</a>
               </li>
-              <li class="nav-item mx-sm-2">
+              <li class="nav-item mx-sm-2 mx-md-3">
                 <a class="nav-link" href="#services">Services</a>
               </li>
-              <li class="nav-item mx-sm-2">
+              <li class="nav-item mx-sm-2 mx-md-3">
                 <a class="nav-link" href="#products">Product</a>
               </li>
-              <li class="nav-item mx-sm-2">
+              <li class="nav-item mx-sm-2 mx-md-3">
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
             <i
-              class="fa fa-shopping-cart mx-2"
+              class="fa fa-shopping-cart mx-2 ml-md-5"
               aria-hidden="true"
               onclick="openCart()"
             ></i>
@@ -80,9 +80,9 @@
       </header>
       <!-- Cart sidepanel -->
       <div id="mySidepanel" class="sidepanel mt-0 pb-5">
-        <nav class="navbar navbar-expand-sm navbar-dark px-3 px-sm-5 py-2">
+        <nav class="navbar navbar-expand-sm navc px-3 px-sm-5 pb-2 pt-0 mt-0">
           <div class="logo">
-            <img src="assets/envatocarelogo.png" alt="" />
+            <!-- <img src="assets/envatocarelogo.png" alt="" /> -->
           </div>
           <div>
             <a href="javascript:void(0)" class="closebtn" onclick="closeCart()"
@@ -234,54 +234,69 @@
 
           <div class="checkout mx-auto" id="checkout">
             <div class="checkout-box my-3 pt-3 pb-4 row">
-              <h2 class="text-bold col-12 text-center">CHECKOUT</h2>
+              <h1 class="font-weight-bold col-11 text-center">CHECKOUT</h2>
               <hr />
-              <form class="mx-auto">
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputName">Name</label>
-                    <input type="text" class="form-control" id="inputName" />
+              <div class="col-12 col-md-7">
+                <form class="m-4 w-md-100">
+                  <div class="form-row my-md-3">
+                    <div class="form-group col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputName"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <select class="form-control">
+  <option>Time of Delivery</option>
+</select>
+                    </div>
                   </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputEmail">Email</label>
-                    <input type="email" class="form-control" id="email" />
+                  <div class="form-row md-md-3">
+                    <div class="form-group col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputName"
+                        placeholder="Phone Number"
+                      />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Time of Delivery"
+                      />
+                    </div>
                   </div>
+                  <div class="form-group my-md-3">
+                    <textarea
+                      class="form-control"
+                      id="example"
+                      placeholder="Your Address"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn d-block mt-5 m-auto px-5">
+                    Pay
+                  </button>
+                </form>
+              </div>
+              <div class="col-12 col-md-5">
+                <div class="checkoutcard my-3">
+                  <p class="mb-3 font-weight-bold text-special">Debit Card</p>
+                  <p>
+                    Insert credit card details:<br />
+                    Master or Visa card
+                  </p>
                 </div>
-                <div class="form-group">
-                  <label for="inputAddress">Address</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="inputAddress"
-                    placeholder="1234 Main St"
-                  />
+                <div class="checkoutcard my-3">
+                  <p class="mb-3 font-weight-bold text-special">Voucher</p>
+                  <p>Insert voucher code for discount</p>
                 </div>
-                <div class="form-group">
-                  <label for="inputAddress2">Address 2</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="inputAddress2"
-                    placeholder="Apartment, studio, or floor"
-                  />
-                </div>
-                <button type="submit" class="btn">Pay</button>
-                
-                </div>
-                <!-- <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Check me out
-      </label>
-    </div>
-  </div> -->
-                
-              </form>
-              <img
-              src="assets/payment_cards 1.png"
-              class="mx-auto img-fluid d-block pt-2"
-            />
+              </div>
             </div>
             <!-- <div class="checkout-box my-3 p-1 p-md-3 row">
               <h4 class="text-bold col-12">2. PAYMENT METHOD</h4>
@@ -316,28 +331,60 @@
                 </button>
               </div>
             </div> -->
-
-            
           </div>
         </div>
       </div>
       <main role="main" class="main">
-        <div class="hero container-fluid" id="home">
-          <div class="hero-text wow animate__animated animate__bounceInDown">
-            <h2>PHARMACY MADE EASY</h2>
-            <h4 class="bold">
+        <div
+          class="hero container-fluid row flex-wrap-reverse flex-md-nowrap py-4 px-4"
+          id="home"
+        >
+          <div class="col-12 col-md-6 hero-text mt-4 mt-md-0">
+            <h2 class="bold">PHARMACY MADE EASY</h2>
+            <h1 class="bold wow animate__animated animate__zoomIn">
               Refill, transfer your
               <span class="special-text">prescriptions</span> the simple way
-            </h4>
+            </h1>
+          </div>
+          <div class="col-12 col-md-6">
+            <img
+              src="assets/undraw_medicine_b1ol 1.svg"
+              class="w-75 w-md-100 m-auto"
+              alt=""
+            />
           </div>
         </div>
-        <div class="about container-fluid" id="about">
-          <h1 class="text-center mt-4 mb-5">About us</h1>
-          <div class="about-boxes row row-eq-height px-2 px-md-4 mx-auto">
+        <div
+          class="about mt-5 container-fluid row flex-wrap-reverse flex-md-nowrap"
+        >
+          <div
+            class="col-12 d-none d-md-flex col-md-7 justify-content-center align-items-center row"
+          >
+            <img
+              src="assets/undraw_medical_care_movn 1.svg"
+              class="wow animate__animated animate__bounceInUp"
+            />
+          </div>
+          <div class="col-12 col-md-5">
+            <h1 class="text-center mt-3">About Us</h1>
+            <div class="centrehr mt-n3">
+              <div
+                class="divider mx-3 wow animate__animated animate__slideInRight"
+              ></div>
+              <div
+                class="divider mx-3 wow animate__animated animate__slideInLeft"
+              ></div>
+            </div>
             <div
-              class="about-box wow animate__animated animate__zoomIn col-12 col-md-5 mr-2 mr-md-4 mb-4 ml-2 ml-md-4 p-3 p-md-4"
+              class="col-12 d-md-none mt-4 mb-5 justify-content-center align-items-center row"
             >
-              <h3 class="mb-5">Who are we?</h3>
+              <img
+                src="assets/undraw_medical_care_movn 1.svg"
+                class="wow animate__animated animate__bounceInUp"
+              />
+            </div>
+            <div class="my-5 my-md-4 p-3 p-md-0">
+              <h2 class="mb-4 mb-md-1 font-weight-bold">Who are we?</h2>
               <p>
                 We are a team of healthcare professionals with medical nd
                 pharmaceutical exxperience of over 20 years.
@@ -345,59 +392,34 @@
               <p>
                 Buy drugs, medical and hospital eqipment fromand get it
                 delivered to you. Envato care enables easier and faster access
-                to drugs
+                to drugs.
               </p>
             </div>
-            <div
-              class="about-box wow animate__animated animate__zoomIn col-12 col-md-5 mr-2 mr-md-4 mb-4 ml-2 ml-md-4 p-3 p-md-4"
-            >
-              <h3 class="mb-5">What do we do?</h3>
+            <div class="my-5 my-md-4 p-3 p-md-0">
+              <h2 class="mb-4 mb-md-1 font-weight-bold">What do we do?</h2>
               <p>
-                We provide an online pharmacy platform for patients/ caregivers
+                We provide an online pharmacy platform for atients/ caregivers
                 and their relatives right from the comfort of their homes or
-                offices without having to visit the four walls of the pharmacy.
+                offices without having to visit the four walls of the pharmacy
               </p>
               <p>
                 Envato care is Nigeria’s largest onlie pharmacy store where you
                 can get the best medicine.
               </p>
             </div>
-            <div
-              class="about-box wow animate__animated animate__zoomIn col-12 col-md-5 mr-2 mr-md-4 mb-4 ml-2 ml-md-4 p-3 p-md-4"
-            >
-              <h3 class="mb-5">Why do we do what we do?</h3>
+            <div class="my-5 my-md-4 p-3 p-md-0">
+              <h2 class="mb-4 mb-md-1 font-weight-bold">
+                Why we do what we do
+              </h2>
               <p>
-                <span class="text-special">To save your time:</span> Our goal is
+                <span class="special-text">To save your time:</span> Our goal is
                 to help all our clients manage theit time better by saving time
                 spent in traffic and on queues.
               </p>
               <p>
-                <span class="text-special">To bear your buden:</span> It is our
+                <span class="special-text">To bear your burden:</span> It is our
                 priority to help patients reduce the stress of buying
                 medications over the counter.
-              </p>
-            </div>
-            <div
-              class="about-box wow animate__animated animate__zoomIn col-12 col-md-5 mr-2 mr-md-4 mb-4 ml-2 ml-md-4 p-3 p-md-4"
-            >
-              <h3 class="mb-5">Our Core Values</h3>
-              <p>
-                Integrity
-              </p>
-              <p>
-                Commitment
-              </p>
-              <p>
-                Accountability
-              </p>
-              <p>
-                Speed Delivery
-              </p>
-              <p>
-                People Centredness
-              </p>
-              <p>
-                Community Development
               </p>
             </div>
           </div>
@@ -539,120 +561,84 @@
               class="product-box wow animate__animated animate__bounceInUp col-xs-12 col-sm-5 col-md-3 m-3 py-3 text-center d-flex flex-column justify-content-between"
             >
               <img src="assets/benadryl-syrup.png" alt="" />
-              <div class="bottom align-self-center">
-                <p>Benadryl Syrup</p>
-                <span
-                  ><span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span
-                ></span>
-                <p>$1000.00</p>
-                <button class="btn btn-primary">
-                  Add to Cart
+              <div class="bottom d-flex justify-content-between">
+                <div class="text-left">
+                  <p class="greytext">Benadryl Syrup</p>
+                  <p>$1000.00</p>
+                </div>
+                <div class="text-right">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                </button>
+                </div>
               </div>
             </div>
             <div
               class="product-box wow animate__animated animate__bounceInUp col-xs-12 col-sm-5 col-md-3 m-3 py-3 text-center d-flex flex-column justify-content-between"
             >
               <img src="assets/amoxicillin-tab.png" alt="" />
-              <div class="bottom">
-                <p>Amoxicillin Tablet</p>
-                <span
-                  ><span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span
-                ></span>
-                <p>$600.00</p>
-                <button class="btn btn-primary">
-                  Add to Cart
+              <div class="bottom d-flex justify-content-between">
+                <div class="text-left">
+                  <p class="greytext">Amoxicillin Tablet</p>
+                  <p>$600.00</p>
+                </div>
+                <div class="text-right">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                </button>
+                </div>
               </div>
             </div>
             <div
               class="product-box wow animate__animated animate__bounceInUp col-xs-12 col-sm-5 col-md-3 m-3 py-3 text-center d-flex flex-column justify-content-between"
             >
               <img src="assets/folic-acid.png" alt="" />
-              <div class="bottom">
-                <p>Folic Acid</p>
-                <span
-                  ><span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span
-                ></span>
-                <p>$1000.00</p>
-                <button class="btn btn-primary">
-                  Add to Cart
+              <div class="bottom d-flex justify-content-between">
+                <div class="text-left">
+                  <p class="greytext">Folic Acid</p>
+                  <p>$1000.00</p>
+                </div>
+                <div class="text-right">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                </button>
+                </div>
               </div>
             </div>
             <div
               class="product-box wow animate__animated animate__bounceInUp col-xs-12 col-sm-5 col-md-3 m-3 py-3 text-center d-flex flex-column justify-content-between"
             >
               <img src="assets/amatem-forte.png" alt="" />
-              <div class="bottom">
-                <p>Amatem Forte</p>
-                <span
-                  ><span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span
-                ></span>
-                <p>$1000.00</p>
-                <button class="btn btn-primary">
-                  Add to Cart
+              <div class="bottom d-flex justify-content-between">
+                <div class="text-left">
+                  <p class="greytext">Amatem Forte</p>
+                  <p>$1000.00</p>
+                </div>
+                <div class="text-right">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                </button>
+                </div>
               </div>
             </div>
             <div
               class="product-box wow animate__animated animate__bounceInUp col-xs-12 col-sm-5 col-md-3 m-3 py-3 text-center d-flex flex-column justify-content-between"
             >
               <img src="assets/gesomid-suspension.png" alt="" />
-              <div class="bottom">
-                <p>Gesomid Suspension</p>
-                <span
-                  ><span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span
-                ></span>
-                <p>$1000.00</p>
-                <button class="btn btn-primary">
-                  Add to Cart
+              <div class="bottom d-flex justify-content-between">
+                <div class="text-left">
+                  <p class="greytext">Gesomid Suspension</p>
+                  <p>$1000.00</p>
+                </div>
+                <div class="text-right">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                </button>
+                </div>
               </div>
             </div>
             <div
               class="product-box wow animate__animated animate__bounceInUp col-xs-12 col-sm-5 col-md-3 m-3 py-3 text-center d-flex flex-column justify-content-between"
             >
               <img src="assets/paracetamol-tablet.png" alt="" />
-              <div class="bottom">
-                <p>Paracetamol Tablet</p>
-                <span
-                  ><span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span
-                ></span>
-                <p>$1000.00</p>
-                <button class="btn btn-primary">
-                  Add to Cart
+              <div class="bottom d-flex justify-content-between">
+                <div class="text-left">
+                  <p class="greytext">Paracetamol Tablet</p>
+                  <p>$1000.00</p>
+                </div>
+                <div class="text-right">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                </button>
+                </div>
               </div>
             </div>
           </div>
@@ -661,7 +647,7 @@
           <div
             class="contact-bg container-fluid p-5 d-flex justify-content-center align-itms-center"
           >
-            <h2 class="text-center font-weight-bold my-5 text-white">
+            <h2 class="text-center font-weight-bold m-auto text-white">
               Contact Us
             </h2>
           </div>
