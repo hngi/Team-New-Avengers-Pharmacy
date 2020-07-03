@@ -19,7 +19,7 @@ h1 {
 }
 
 h2 {
-    font-size: calc(13px + (32 - 13) * ((100vw - 320px) / (1600 - 320)));
+    font-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1600 - 320)));
     line-height: calc(17px + (41 - 17) * ((100vw - 320px) / (1600 - 320)));
 }
 
@@ -28,8 +28,12 @@ h3 {
     line-height: calc(15px + (29 - 15) * ((100vw - 320px) / (1600 - 320)));
 }
 
+h5 {
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1600 - 320)));
+}
+
 h6 {
-    font-size: calc(8px + (18 - 8) * ((100vw - 320px) / (1600 - 320)));
+    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 320)));
 }
 
 .bg-primary {
@@ -54,7 +58,7 @@ h6 {
 
 .text-border {
     border-bottom: 3px solid #0146C0;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
 }
 
 .border-radius {
@@ -67,8 +71,12 @@ p {
 }
 
 .small {
-    font-size: calc(9px + (16 - 8) * ((100vw - 320px) / (1600 - 320)));
+    font-size: calc(11px + (16 - 11) * ((100vw - 320px) / (1600 - 320)));
     font-weight: lighter;
+}
+
+.extra-small {
+    font-size: calc(10px + (12 - 10) * ((100vw - 320px) / (1600 - 320)));
 }
 
 .navbar {
@@ -110,8 +118,17 @@ p {
     font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (1600 - 320)));
 }
 
+.btn-light {
+    background: #F5F5F5;
+    color: #919191;
+}
+
 .btn-outline {
     border: 1px solid #455A64;
+}
+
+.btn-lg {
+    width: calc(150px + (240 - 150) * ((100vw - 320px) / (1600 - 320)));
 }
 
 .hero__img {
@@ -140,54 +157,9 @@ p {
 }
 
 .cart {
-    width: calc(18px + (25 - 18) * ((100vw - 320px) / (1600 - 320)));
-}
-
-.cart__hero span {
-    font-weight: 600;
-    padding: 5px 20px;
-    border-bottom: 3px solid #D6D6D6;
-    cursor: pointer;
-}
-
-.cart__hero span:first-child {
-    border-color: #0146C0;
-}
-
-.cart__hero span:last-child {
-    padding-left: 30px;
-}
-
-.table {
-    text-align: center;
-}
-
-thead, tr td {
-    font-size: calc(10px + (18 - 10) * ((100vw - 320px) / (1600 - 320)));
-}
-
-.paginate {
-    display: flex;
-    justify-content: center;
-    height: inherit;
-}
-
-.paginate p {
-    padding: 5px 10px;
-}
-
-.paginate p:nth-child(odd) {
-    background: rgba(1, 70, 192, 0.87);
-    color: #fff;
-    cursor: pointer;
-}
-
-.paginate p:first-child {
-    border-radius: 5px 0 0 5px;
-}
-
-.paginate p:last-child {
-    border-radius: 0 5px 5px 0;
+    border: 1.5px solid #2162D3;
+    padding: 8px;
+    border-radius: 50%;
 }
 
 .form-control {
@@ -209,12 +181,12 @@ textarea.form-control {
     margin-top: 0px;
 }
 
-.footer__link {
+.footer__link a {
     display: flex;
     flex-direction: column;
     font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1600 - 320)));
     font-weight: lighter;
-    margin: 10px 0;
+    margin-bottom: 5px;
 }
 
 hr {
@@ -240,7 +212,4 @@ hr {
     .navbar-logo {
         width: 100%;
     }
-}
-
-@media screen and (min-width:1200px) {
 }
