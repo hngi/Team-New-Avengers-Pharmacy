@@ -76,8 +76,8 @@ p {
 .hero .hero-text {
   /* max-width: 440px; */
 }
-.hero .hero-text .bold {
-  font-weight: bold;
+.bold {
+  font-weight: bold !important;
 }
 img {
   max-width: 100%;
