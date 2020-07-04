@@ -1,0 +1,606 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif
+}
+
+/* Defaults */
+ul {
+    list-style-type: none;
+}
+
+h1, h2, h3 {
+    font-weight: bolder;
+}
+
+p {
+    font-size: 12px;
+}
+
+
+/* Navbar Color */
+.nav-color {
+    color: #3774DF !important;
+}
+
+.nav-color span {
+    color: #3774DF !important;
+}
+
+.nav-color li {
+    padding: 0 8px;
+}
+
+.hand-burger {
+    background: #3774DF;
+    padding: 2px;
+    color: white;
+}
+
+/* Header */
+.header {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(131.3deg, rgba(1, 70, 192, 0.89) 41.14%, rgba(1, 70, 192, 0.69) 66.35%), url(../images/header-bg.jpg) center no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding-top: 60px;
+}
+
+.header h1 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.header p {
+    font-weight: 200;
+    font-size: 10px;
+    color: #f2f2f2;
+}
+
+.header h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header img {
+    position: absolute;
+    width: 450px;
+    height: 400px;
+    left: 26px;
+    top: 21px;
+
+}
+
+.header-right {
+    position: relative;
+    width: 100%;
+    float: right;
+    background: url(../images/pharmacist.png) center no-repeat;
+    background-size: auto;
+}
+
+.ph-btn {
+    background: #fff !important;
+    color: #3774DF !important;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+/* Sign in */
+.about-us {
+    position: relative;
+    color: #151D56;
+}
+
+.about-us h2 {
+    font-weight: 600;
+}
+
+.about-us img {
+    width: 100%;
+    height: 85%;
+}
+
+.ph-btn-reverse {
+    color: #fff !important;
+    background: #3774DF !important;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+
+/* Services */
+.services {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    margin: 20px 0;
+    color: #151D56;
+}
+
+.services img {
+    position: relative;
+    width: 100%;
+    height: 55%;
+    margin-bottom: 20px;
+}
+
+.services h2,h4 {
+    font-weight: 800;
+}
+
+.services h4 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.services p {
+    font-size: 13px;
+}
+/* .width-small {
+    width: 90% !important;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
+.btn-w {
+    width: 100%;
+    text-align: center;
+    /* position: relative; */
+}
+
+
+/* Page List */
+.page-lists {
+    position: relative;
+    color: #151D56;
+    width: 100%;
+    padding: 40px 0;
+    margin: 40px 0;
+}
+
+.page-lists h2 {
+    font-weight: 600;
+    font-size: 25px;
+    margin: 12px 0;
+}
+
+.page-lists h5 {
+    font-size: 16px;
+}
+
+.page-lists p {
+    font-size: 12px;
+}
+
+.page-lists i {
+    background: #0C1346;
+    color: white;
+    padding: 10px;
+    margin: 16px;
+    border-radius: 50%;
+}
+
+.blog-1 {
+    background: url(../images/grid-1.jpg) center no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.blog-2 {
+    background: url(../images/grid-2.jpg) center no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.blog-3 {
+    background: url(../images/grid-3.jpg) center no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+/* Discount */
+.discount {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(99.54deg, #283594 12.02%, rgba(40, 53, 148, 0.84) 30.87%, rgba(40, 53, 148, 0.31) 96.76%), url(../images/clip-path-top.jpg) center no-repeat;
+    background-size: cover;
+    clip-path: polygon(10% 10%, 100% 0, 100% 100%, 0 100%);
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+}
+
+.discount h4 {
+    font-weight: 800;
+    font-size: 80px;
+}
+
+.discount p {
+    font-size: 12px;
+}
+
+/* Partners */
+.partners {
+    position: relative;
+    width: 100%;
+    background: #092C4C;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.partners img {
+    width: 50%;
+    color: #fff;
+}
+
+/* Start Chat */
+.start-chat {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(83.06deg, rgba(255, 255, 255, 0.1) 25.05%, rgba(40, 53, 148, 0.26) 40.23%), url(../images/clip-path-buttom.png) center no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 90% 90%, 0 100%);
+    color: #151D56;
+    padding: 100px 0;
+    margin-bottom: 40px;
+}
+
+.start-chat h2 {
+    font-weight: bolder;
+}
+
+/* Featured Products */
+.featured-products {
+    position: relative;
+    width: 100%;
+    color: #151D56;
+    padding: 20px 0;
+    /* margin: 10px 0; */
+}
+
+.featured-products h2 {
+    font-weight: bolder;
+}
+
+.featured-products img {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 12px;
+}
+
+.featured-products span {
+    text-align: right;
+    float: right;
+}
+
+/* Cart */
+.cart-items {
+    position: relative;
+    width: 100%;
+    color: #0C1346;
+}
+
+.cart-items img {
+    position: relative;
+    width: 100%;
+    height: 95%;
+}
+
+.cart-items h5 {
+    font-weight: bolder;
+}
+
+.switch-btn {
+    border: 10px solid #3774df;
+    border-radius: 4px;
+    background: #ebebeb;
+}
+
+.tab-btn-left {
+    background: #3774DF;
+    padding: 6px;
+    color: #fff;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin-right: 4px;
+}
+
+.tab-btn-right {
+    background: #3774DF;
+    padding: 6px;
+    color: #fff;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-left: 4px;
+}
+
+.cart-items i {
+    background: #3774DF;
+    color: white;
+    font-size: 8px;;
+    border-radius: 100%;
+    padding: 4px;
+    margin-left: 50px;
+}
+
+/* Checkout */
+.checkout {
+    position: relative;
+    width: 100%;
+    color: #0C1346;
+    padding: 10px 0;
+}
+
+/* About */
+.about {
+    position: relative;
+    width: 100%;
+    color: #0C1346;
+    padding: 10px 0;
+    margin: 20px 0;
+}
+
+.about p {
+    text-align: center;
+    font-size: 14px;
+    padding: 16px 0;
+}
+
+.about h2 {
+    font-weight: bolder;
+}
+
+/* contact */
+.contact {
+    position: relative;
+    width: 100%;
+    color: #0C1346;
+    padding: 10px 0;
+
+}
+
+.contact h2 {
+    font-weight: bolder;
+}
+
+/* .contact form {
+    width: 100%;
+}
+
+.contact input {
+    width: 100%;
+    padding: 14px 12px;
+    border-radius: 2%;
+    margin: 10px 12px;
+}
+
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 1%;
+} */
+
+/* Footer */
+.care-footer {
+    position: relative;
+    background: rgba(1, 70, 192, 0.87);
+    color: #fff;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+
+.care-footer h4 {
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.care-footer img {
+    float: center;
+    /* padding: 20px 50%; */
+    margin: 14px 40px;
+    width: 65%;
+    /* height: 60%;  */
+}
+
+.care-footer li {
+    font-size: 12px;
+    margin: 8px 0;
+}
+
+.footer-ad {
+    color: rgba(180, 206, 253, 0.89);
+    margin-right: 5px;
+}
+
+/* Media Queries */
+@media screen and (max-width:1499px){
+    .header img {
+        position: absolute;
+        width: 500px;
+        height: 450px;
+        left: 10px;
+        top: -43px;
+    
+    } 
+}
+
+@media screen and (max-width:1199px){
+    .header img {
+        position: absolute;
+        width: 500px;
+        height: 450px;
+        left: 0px;
+        top: -29px;
+    
+    } 
+}
+
+@media screen and (max-width:991px){
+    .header img {
+        position: absolute;
+        width: 450px;
+        height: 400px;
+        left: 0px;
+        top: 72px;
+    
+    }
+     
+}
+
+
+@media screen and (max-width:767px){
+    .ph-btn-reverse {
+        font-size: 8px !important;
+        padding: 6px 10px !important;
+      }
+    .discount h4 {
+        padding: 2px !important;
+        font-size: 60px;
+
+    } 
+    .ph-btn {
+        background: #fff !important;
+        color: #3774DF !important;
+        padding: 6px 10px !important;
+        text-transform: uppercase;
+        margin: 10px 0;
+        font-size: 8px !important;
+    }
+
+    .header img {
+        position: absolute;
+        width: 250px;
+        height: 200px;
+        left: -20px;
+        top: -10px;
+    
+    }
+    .discount p {
+        font-size: 10px;
+        padding: 10px;
+      }
+    .start-chat h2 {
+        font-size: 24px;
+     }
+    .header h1 {
+        font-size: 24px;
+     }
+    .header p {
+        font-size: 10px;
+     }
+    .partners h2 {
+        font-size: 24px;
+     } 
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .header img {
+        position: absolute;
+        width: 350px;
+        height: 290px;
+        left: -30px;
+        top: 172px;
+    
+    }
+}
+
+
+
+
+@media screen and (max-width:575px){
+    .header img {
+        position: absolute;
+        width: 200px;
+        height: 160px;
+        left: -10px;
+        top: 2px;
+    
+    }
+}
+
+
+@media screen and (max-width:514px){
+    .ph-btn-reverse {
+        font-size: 8px !important;
+        padding: 6px 10px !important;
+      }
+    .discount h4 {
+        padding: 2px !important;
+        font-size: 40px;
+
+    } 
+
+    .header img {
+        position: absolute;
+        width: 200px;
+        height: 160px;
+        left: -10px;
+        top: 14px;
+    
+    }
+
+    .discount {
+        padding-top: 40px !important;
+        padding-bottom: 20px !important;
+        margin-top: 20px !important;
+    }
+
+    .start-chat {
+        padding: 50px 0;
+        margin-bottom: 20px;
+    }
+
+    .ph-btn {
+        background: #fff !important;
+        color: #3774DF !important;
+        padding: 6px 10px !important;
+        text-transform: uppercase;
+        margin: 10px 0;
+        font-size: 8px !important;
+    }
+    .discount p {
+        font-size: 8px;
+        padding: 10px;
+      }
+    .start-chat h2 {
+        font-size: 20px;
+     }
+    .header h1 {
+        font-size: 20px;
+     }
+    .header p {
+        font-size: 8px;
+     }
+    .partners h2 {
+        font-size: 20px;
+     }
+
+}
+
+@media (min-width: 437px) and (max-width: 514px) {
+    .header img {
+      position: absolute;
+      width: 200px;
+      height: 160px;
+      left: -10px;
+      top: -10px;
+  
+  }
+}
+
+@media screen and (max-width:335px){
+    .header img {
+        position: absolute;
+        width: 250px;
+        height: 200px;
+        left: -50px;
+        top: -2px;
+    
+    }
+}
