@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+* {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+}
+.bg-dark{
+  background-color: #000000;
+}
+
+header .navbar {
+  background-color: #FFFFFF;
+  color: #3774DF;
+
+}
+
+header .navbar .navbar-brand img{
+  width: 138px;
+}
+
+header .navbar  .nav-item {
+  padding: 15px;
+}
+
+header .navbar .nav-item .nav-link {
+  color: #3774DF;
+  font-size: 19px;
+  line-height: 22px;
+}
+
+header .navbar .nav-item .nav-link:focus {
+  color: #3774DF;
+}
+
+header .navbar .nav-item .nav-link:hover {
+  color: #3774DF;
+}
+
+header .navbar .navbar-toggler-icon, .navbar-toggler {
+  color: #FFFFFF;
+}
+
+/* Carousel */
+
+.carousel-control-prev{
+  position: absolute;
+    opacity: 1;
+    left: -2rem;
+    top: 10rem;
+}
+
+.carousel-control-prev-icon {
+  border: 2px solid #83ADF5;
+  border-radius: 50%;
+  padding: 10px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgba(131, 173, 245, 1)'  viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next{
+  position: absolute;
+  opacity: 1;
+  top: 10rem;
+}
+
+.carousel-control-next-icon{
+  border: 2px solid #83ADF5;
+  border-radius: 50%;
+  padding: 10px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='rgba(131, 173, 245,1)' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+main .slider .carousel-inner .carousel-caption{
+  font-size: 16px;
+  line-height: 20px;
+}
+
+main .carousel-item img{
+ height: 100%;
+
+}
+
+.carousel-caption{
+  position: absolute;
+  top: 30.8rem;
+  left: 8rem;
+}
+
+main .slider .carousel-inner .carousel-caption h3 {
+ 
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 26px;
+ 
+  color: #FFFFFF;
+}
+
+main .slider .carousel-inner .carousel-caption p {
+ 
+  font-size: 16px;
+  line-height: 20px;
+  width: 25rem;
+}
+
+.specialty-header{
+  width: 13rem;
+  border-bottom: 4px solid #3774DF;
+  color: #3774DF;
+  margin-bottom: 1rem;
+}
+
+.spec-desc{
+  width: 50rem;
+}
+.professional-care{
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+.specialty-header.prof{
+  width: 35rem;
+}
+
+.btn-prof{
+  padding: .75rem 2rem;
+  /* border-radius: 8px; */
+  background: #3774DF;
+}
+
+.list-item{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 18px;
+
+}
+
+.clippy{
+  clip-path: polygon(100% 0, 100% 69%, 71% 100%, 0 100%, 0 0);
+  background-color: #3774DF;
+  width: 25rem;
+  height: 23rem;
+  border-radius: 8px;
+  margin: auto;
+  position: relative;
+  top: -13rem;
+}
+
+.recent{
+  background: #C4C4C4;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.recent-header{
+  color:  #3774DF;  
+}
+
+.card{
+  border: 0 !important;
+  cursor: pointer;
+  opacity: .8;
+}
+
+.card:hover{
+  box-shadow:  0 1rem 3rem rgba(0,0,0, .175);
+  
+}
+.product-price{
+  color: #3774DF;
+}
+
+.card-img-top{
+  padding: 1rem;
+  height: 300px;
+}
+
+.card-header{
+  border: none;
+  background-color: transparent;
+}
+
+.discount{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  color: #fff;
+  margin-left: auto;
+  background: #3774DF;
+}
+
+main .banner .jumbotron{
+ 
+  background-repeat: no-repeat;
+  background: linear-gradient( rgba(17, 17, 17, 0.5), rgba(71, 62, 62, 0.5) ), url('/img/images/Rectangle\ 133.png');
+  background-size: cover;
+  opacity: .9;
+  height: 39.5rem;
+}
+
+.form{
+  width: 80%;
+  margin: auto;
+  padding: 5rem;
+  background: #fff;
+  position: relative;
+  top: -16rem;
+}
+
+.btn-form{
+  display: grid;
+  place-content: center;
+}
+
+.text-primary{
+  color: #3774DF !important;
+}
+
+.bg-primary{
+  background-color: #3774DF !important;
+}
+
+.btn-submit{
+  padding: .75rem 4rem;
+  background: #3774DF;
+  border-radius: 8px;
+}
+
+.container-fluid{
+  width: 95% !important;
+}
+
+.team{
+  background: #BCD4FD;
+  padding: 3rem 3rem;
+}
+
+.info-box{
+  background-color: #3774DF;
+  padding: .75rem 2rem;
+  color: #FFFFFF;
+  width: 22.9rem;
+}
+
+.staff-icons{
+  color: #FFFFFF;
+}
+
+.row {
+  margin-left: 0px !important;
+}
+
+footer{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #3774DF;
+  color: #FFFFFF;
+}
+
+footer ul li a{
+  color: #fff !important;
+}
+
+.quikie{
+  display: grid;
+  place-content: center;
+}
+@media (max-width: 640px) {
+  .spec-desc, .prof, .clippy{
+    width: auto !important;
+  }
+
+  .carousel-caption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    margin-top: 7rem;
+  }
+
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    display: none;
+  }
+
+  .spec-img{
+    width: 100%;
+  }
+
+  .professional-care{
+    margin-top: 5rem;
+  }
+
+  .services img{
+    width: 100%;
+  }
+
+  .form{
+    width: auto;
+    padding: 2rem;
+  }
+
+  .staff-image{
+    width: 100%
+  }
+
+  .info-box{
+    width: auto;
+  }
+
+  .quikie{
+    display: block;
+  }
+
+  .mob-space{
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+
+  .banner{
+    color: #fff;
+  }
+
+}

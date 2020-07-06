@@ -13,32 +13,88 @@
   --shadowEffect1shadow: 0px 10px 24px rgba(0, 0, 0, 0.1);
   --shadowEffect2shadow: 0px 5px 20px rgba(27, 30, 51, 0.2);
   --shadowEffect3shadow: 0px 4px 4px rgba(9, 44, 76, 0.13);
+  --transition: all 1s linear;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  overflow-x: hidden;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
 }
 body {
   margin: 0;
   padding: 0;
+  color: var(--primaryColor);
 }
-h1,
-h2,
-h3,
-h4,
-p {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-}
+
 h1 {
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 4rem;
+}
+h2 {
+  font-weight: 500;
+  font-size: 3rem;
+}
+h3 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+h4 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+p {
+  font-weight: normal;
+  font-size: 20px;
+}
+@media (max-width: 991px) {
+  h1 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+.hero .hero-text {
+  /* max-width: 440px; */
+}
+.bold {
+  font-weight: bold !important;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.special-text {
+  color: var(--secondaryColor);
 }
 /* Navbar Classes */
 .navbar {
   background-color: var(--primaryColor);
   /* padding: 0.625rem 5rem 0.625rem 5rem; */
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--textColor);
 }
 .active .nav-link {
   color: var(--secondaryColor) !important;
@@ -50,61 +106,105 @@ i.fa {
   color: var(--neutralColor);
   font-size: 24px;
 }
-
+button.btn:hover {
+  color: var(--textColor);
+}
+button:focus {
+  outline: none;
+}
+button.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
 /* Hero Section Classes */
 .hero {
-  background-image: url('../assets/hero-img.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 25rem;
+  background-color: var(--neutralColor);
+  color: var(--primaryColor);
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-.hero .hero-text {
-  color: var(--textColor);
-  max-width: 535px;
+
+.hero-text h2 {
+  animation: bounce1 s forwards ease-in-out;
+  animation-iteration-count: 2;
 }
-.hero .hero-text .bold {
-  font-weight: bold;
-}
-.hero .hero-text .special-text {
-  color: var(--primaryColor);
+@keyframes bounce1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* About Section Classes */
 .about {
   background-color: var(--neutralColor);
+  color: var(--primaryColor);
 }
-.about h1 {
+.about h1,
+.about h2 {
   font-weight: bold;
+}
+
+.divider {
+  border: 3px solid #f2994a;
+  display: inline-block;
+  width: 100px;
+  border-radius: 5px;
+
+  /* margin-left: 30px */
+}
+
+.about img.up {
+  max-width: 80%;
+}
+@media (max-width: 991px) {
+  .divider {
+    width: 50px;
+  }
+}
+.about img {
+  max-width: 90%;
+}
+.centrehr {
+  text-align: center;
 }
 .about-boxes {
   justify-content: center;
 }
 .about .about-box {
-  padding: 2.5rem;
   background-color: var(--secondaryColor);
   color: var(--textColor);
 }
+.about-box:hover {
+  filter: brightness(1.2);
+  transform: scale(1.02);
+}
 .about-box h3 {
-  margin-bottom: 3.7rem;
   text-align: center;
 }
 .about-box p {
 }
+.text-special {
+  color: var(--primaryColor);
+}
 
 /* Services section classes */
 .services {
-  background-color: var(--primaryColor);
-  color: var(--textColor);
+  background-color: var(--neutralColor);
+  color: var(--primaryColor);
 }
 .services .services-grid-icon {
-  background-color: var(--neutralColor);
+  background-color: var(--primaryColor);
   display: flex;
+  color: var(--secondaryColor);
   justify-content: center;
   align-items: center;
   max-height: 96px;
@@ -116,18 +216,53 @@ i.fa {
   background-color: var(--neutralColor);
 }
 .product-boxes .product-box {
-  background-color: rgba(255, 255, 255, 0.3);
-  border: 3px solid rgba(9, 44, 76, 0.4);
-  position: relative;
 }
+.product-boxes .product-box .imagesec {
+  background: rgba(242, 153, 74, 0.38);
+  border-top: 3px solid rgba(9, 44, 76, 0.25);
+  border-left: 3px solid rgba(9, 44, 76, 0.25);
+  border-right: 3px solid rgba(9, 44, 76, 0.25);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  height: 70%;
+}
+.product-boxes .product-box .bottom {
+  border-bottom: 3px solid rgba(9, 44, 76, 0.25);
+  border-left: 3px solid rgba(9, 44, 76, 0.25);
+  border-right: 3px solid rgba(9, 44, 76, 0.25);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  /* position: absolute; */
+  color: var(--primaryColor);
+  line-height: 13px;
+  font-weight: bold;
+  background-color: var(--neutralColor);
+}
+
+.product-boxes.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-boxes.row.display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
 .product-boxes .product-box img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-.product-boxes .product-box .bottom .checked {
-  /* position: absolute; */
-  color: #092c4c;
+.product-box:hover {
+  transform: scale(0.98);
+  filter: brightness(0.98);
+}
+
+.product-boxes .product-box .bottom i.fa {
+  color: var(--primaryColor);
+}
+.product-boxes .product-box .bottom .greytext {
+  color: #4f4f4f;
 }
 .btn-primary {
   background-color: var(--secondaryColor);
@@ -146,6 +281,11 @@ Contact Section Classes */
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 991px) {
+  .contact .contact-bg {
+    /* height: 250px; */
+  }
+}
 .contact-map {
   height: 300px;
   width: 100%;
@@ -153,9 +293,12 @@ Contact Section Classes */
 .contact-map .gm-style > div:not(:first-child) {
   display: none;
 }
-.vl {
-  border-left: 5px solid rgba(9, 44, 76, 0.4);
-  height: 500px;
+
+@media (min-width: 992px) {
+  .vl {
+    border-left: 5px solid rgba(9, 44, 76, 0.4);
+    height: 500px;
+  }
 }
 .contact-area hr {
   border: 3px solid rgba(9, 44, 76, 0.4);
@@ -181,6 +324,10 @@ Contact Section Classes */
 .a-follow-option-icon {
   background-color: var(--primaryColor);
 }
+.a-contact-option-icon {
+  max-height: 70px;
+  max-width: 70px;
+}
 .a-contact-option .a-contact-option-icon {
   background-color: var(--primaryColor);
   display: flex;
@@ -192,6 +339,8 @@ Contact Section Classes */
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 70px;
+  max-width: 70px;
 }
 
 /* Footer Section Classes */
@@ -203,6 +352,129 @@ footer hr {
   width: 95%;
   margin: auto;
 }
+footer p {
+  font-size: 14px;
+}
 footer .special-footer-text {
   color: var(--secondaryColor);
+}
+/* The sidepanel menu */
+.sidepanel {
+  height: 100vh; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #e5e5e5; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+.sidepanel .navc {
+  background-color: var(--neutralColor);
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #092c4c;
+}
+.cart-box {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+}
+.cart-box-item {
+  border-right: 1px solid rgba(0, 0, 0, 0.13);
+}
+.cart-box .checked {
+  color: #f2994a;
+}
+
+@media (min-width: 768px) {
+  .cart-box-quantity {
+    border-right: 1px solid rgba(0, 0, 0, 0.13);
+  }
+}
+.cart-box hr {
+  border: 0.2px solid #4f4f4f;
+  width: 70%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.wrapper-cart {
+  max-width: 1250px;
+}
+.cart-box .form-control {
+  width: 70%;
+}
+.submit-div button {
+  background-color: var(--secondaryColor);
+  color: var(--textColor);
+}
+
+/* Checkout Section */
+.checkout {
+  display: none;
+}
+.checkout-box {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+}
+.checkout hr {
+  width: 100%;
+}
+.checkout button {
+  background-color: var(--secondaryColor);
+  color: var(--textColor);
+}
+
+.checkoutcard {
+  background: #fcfcfc;
+  /* shadow effect 3 */
+
+  box-shadow: 0px 4px 4px rgba(9, 44, 76, 0.13);
+  border-radius: 8px;
+  height: 160px;
+  max-width: 275px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+.checkoutcard:hover {
+  cursor: pointer;
+  transform: filter(1.1);
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--secondaryColor); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 5px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+  background-color: var(
+    --primaryColor
+  ); /* Add a dark-grey background on hover */
 }
