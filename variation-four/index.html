@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pharmacy - Variation Four</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="src/variation-four.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <!-- Normal Nav -->
+        <nav class="navbar navbar-expand-md navbar-dark px-3 px-sm-5 py-2">
+          <div class="logo">
+            <img src="assets/envatocarelogo.png" alt="" />
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#care-navbar"
+            aria-controls="care-navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="care-navbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active mx-sm-2 mx-md-3">
+                <a class="nav-link" href="#home"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item mx-sm-2 mx-md-3">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item mx-sm-2 mx-md-3">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item mx-sm-2 mx-md-3">
+                <a class="nav-link" href="#products">Product</a>
+              </li>
+              <li class="nav-item mx-sm-2 mx-md-3">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <i
+              class="fa fa-shopping-cart mx-2 ml-md-5"
+              aria-hidden="true"
+              onclick="openCart()"
+            ></i>
+            <i
+              class="fa fa-search mx-2"
+              aria-hidden="true"
+              id="search-icon"
+              onclick="toggleSearch()"
+            ></i>
+            <form class="form-inline my-2 my-md-0 d-none mx-3" id="search">
+              <input class="form-control" type="text" placeholder="Search" />
+            </form>
+          </div>
+        </nav>
+      </header>
+      <!-- Cart sidepanel -->
+      <div id="mySidepanel" class="sidepanel mt-0 pb-5">
+        <nav class="navbar navbar-expand-sm navc px-3 px-sm-5 pb-2 pt-0 mt-0">
+          <div class="logo">
+          </div>
+          <div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeCart()"
+              >&times;</a
+            >
+          </div>
+        </nav>
+        <div
+          class="container-fluid wrapper-cart px-4 py-3 mb-3 justify-content-center"
+        >
+          <div class="cart mb-5">
+            <h3 class="mb-3">Cart (3 items)</h3>
+            <div class="cart-box my-3 row p-1 p-md-3">
+              <div class="cart-box-item cart-item col-6">
+                <p>ITEM</p>
+                <div class="item-flow row">
+                  <div class="item-flow-img col-12 col-md-3">
+                    <img
+                      src="assets/cart-amoxicillin.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="item-flow-details col-12 col-md-9 ">
+                    <p class="text-bold">Product: Amocillin Tablet</p>
+                    <span
+                      ><span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-box-box other-box col-6 pr-0 row">
+                <div class="cart-box-quantity col-12 col-md-6">
+                  <p class="text-md-center">QUANTITY</p>
+                  <select
+                    class="form-control form-control-lg mr-md-auto ml-md-auto"
+                  >
+                    <option selected="selected"><strong>1</strong></option>
+                    <option><strong>2</strong></option>
+                    <option><strong>3</strong></option>
+                  </select>
+                </div>
+                <hr class="d-block d-md-none" />
+                <div class="cart-box-subtotal col-12 col-md-6 text-md-center">
+                  <p>SUB TOTAL</p>
+                  <strong>$200.00</strong>
+                </div>
+              </div>
+            </div>
+            <div class="cart-box my-3 row p-1 p-md-3">
+              <div class="cart-box-item cart-item col-6">
+                <p>ITEM</p>
+                <div class="item-flow row">
+                  <div class="item-flow-img col-12 col-md-3">
+                    <img
+                      src="assets/cart-amocillin.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="item-flow-details col-12 col-md-9">
+                    <p class="text-bold">Product: Amocillin Tablet</p>
+                    <span
+                      ><span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-box-box other-box col-6 pr-0 row">
+                <div class="cart-box-quantity col-12 col-md-6">
+                  <p class="text-md-center">QUANTITY</p>
+                  <select
+                    class="form-control form-control-lg mr-md-auto ml-md-auto"
+                  >
+                    <option selected="selected"><strong>1</strong></option>
+                    <option><strong>2</strong></option>
+                    <option><strong>3</strong></option>
+                  </select>
+                </div>
+                <hr class="d-block d-md-none" />
+                <div class="cart-box-subtotal col-12 col-md-6 text-md-center">
+                  <p>SUB TOTAL</p>
+                  <strong>$700.00</strong>
+                </div>
+              </div>
+            </div>
+            <div class="cart-box my-3 row p-1 p-md-3">
+              <div class="cart-box-item cart-item col-6">
+                <p>ITEM</p>
+                <div class="item-flow row">
+                  <div class="item-flow-img col-12 col-md-3">
+                    <img
+                      src="assets/cart-benadryl.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="item-flow-details col-12 col-md-9">
+                    <p class="text-bold">Product: Benadoyl Syrup</p>
+                    <span
+                      ><span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-box-box other-box col-6 pr-0 row">
+                <div class="cart-box-quantity col-12 col-md-6">
+                  <p class="text-md-center">QUANTITY</p>
+                  <select
+                    class="form-control form-control-lg mr-md-auto ml-md-auto"
+                  >
+                    <option selected="selected"><strong>1</strong></option>
+                    <option><strong>2</strong></option>
+                    <option><strong>3</strong></option>
+                  </select>
+                </div>
+                <hr class="d-block d-md-none" />
+                <div class="cart-box-subtotal col-12 col-md-6 text-md-center">
+                  <p>SUB TOTAL</p>
+                  <strong>$1000.00</strong>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-end my-2">
+              <strong class="mx-3">TOTAL</strong>
+              <strong class="mx-3">$1900.00</strong>
+            </div>
+            <div class="cart-box submit-div p-3 row justify-content-end">
+              <button type="button" class="btn mx-3">
+                BACK
+              </button>
+              <button type="button" class="btn mx-3" onclick="toggleCheckout()">
+                CHECKOUT
+              </button>
+            </div>
+          </div>
+
+          <div class="checkout mx-auto" id="checkout">
+            <div class="checkout-box my-3 pt-3 pb-4 row">
+              <h1 class="font-weight-bold col-11 text-center">CHECKOUT</h2>
+              <hr />
+              <div class="col-12 col-md-7">
+                <form class="m-4 w-md-100">
+                  <div class="form-row my-md-3">
+                    <div class="form-group col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputName"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <select class="form-control">
+  <option>Time of Delivery</option>
+</select>
+                    </div>
+                  </div>
+                  <div class="form-row md-md-3">
+                    <div class="form-group col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputName"
+                        placeholder="Phone Number"
+                      />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Time of Delivery"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group my-md-3">
+                    <textarea
+                      class="form-control"
+                      id="example"
+                      placeholder="Your Address"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn d-block mt-5 m-auto px-5">
+                    Pay
+                  </button>
+                </form>
+              </div>
+              <div class="col-12 col-md-5">
+                <div class="checkoutcard my-3">
+                  <p class="mb-3 font-weight-bold text-special">Debit Card</p>
+                  <p>
+                    Insert credit card details:<br />
+                    Master or Visa card
+                  </p>
+                </div>
+                <div class="checkoutcard my-3">
+                  <p class="mb-3 font-weight-bold text-special">Voucher</p>
+                  <p>Insert voucher code for discount</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <main role="main" class="main">
+        <!-- HERO Section -->
+
+        <div
+          class="hero mt-3 row px-4 px-md-3" id="home"
+        >
+        
+          <div class="col-12 col-md-6 hero-text mt-4 mt-md-0 text-left pl-5 order-2 order-md-1">
+            <h1 class="bold wow animate__animated animate__zoomIn mb-3">
+              Refill, transfer your prescriptions the simple way
+            </h1>
+            <h4 class="special-text bold">Pharmacy made easy</h4>
+          </div>
+          <div class="col-md-6 order-1 order-md-2">
+            <div class="mt-2 mt-md-4 mb-2 mb-md-3 p-4">
+              <img
+              src="assets/undraw_medicine_b1ol 1.svg"
+              class="d-block img-fluid m-auto mb-5 mb-md-auto"
+              alt=""
+            />
+            </div>
+            </div>
+          </div> 
+        </div>
+
+
+
+
+        <!-- ABOUT US SECTION -->
+        <div
+          class="about mt-5 row" id="about"
+        >
+        <div class="col-12 mb-4">
+            <h2 class="text-center mt-3" style="color: #8D8F92">About Us</h2>
+            <div class="centrehr mt-n3">
+              <div
+                class="divider mx-3 wow animate__animated animate__slideInRight"
+                style="border-radius: 5px;"
+              ></div>
+              <div
+                class="divider mx-3 wow animate__animated animate__slideInLeft"
+                style="border-radius: 5px;"
+              ></div>
+            </div>
+          </div>
+        
+          <div
+            class="col-md-7 justify-content-center align-items-center d-flex"
+          >
+            <img
+              src="assets/undraw_medical_care_movn 1.svg"
+              class="up wow animate__animated animate__bounceInUp d-block m-auto mb-5 mb-md-auto"
+            />
+          </div>
+          <div class="col-md-5">
+            <div class="mt-5 mt-md-1 mb-2 mb-md-3 p-3">
+              <h3 class="mb-3 mb-md-1 font-weight-bold">Who are we?</h3>
+              <p>
+                We are a team of healthcare professionals with medical and
+                pharmaceutical experience of over 20 years.
+              </p>
+            </div>
+            <div class="my-2 my-md-3 p-3">
+              <h3 class="mb-3 mb-md-1 font-weight-bold">What do we do?</h3>
+              <p>
+                We provide an online pharmacy platform for atients/ caregivers
+                and their relatives right from the comfort of their homes or
+                offices without having to visit the four walls of the pharmacy
+              </p>
+            </div>
+            <div class="my-2 my-md-3 p-3">
+              <h3 class="mb-3 mb-md-1 font-weight-bold">
+                Why we do what we do
+              </h3>
+              <p>
+                <span class="special-text">To save your time:</span> Our goal is
+                to help all our clients manage theit time better by saving time
+                spent in traffic and on queues.
+              </p>
+            </div>
+            </div>
+          </div> 
+        </div>
+
+
+        <!-- SERVICES SECTION -->
+        <div class="services container-fluid mt-4 px-5 py-5" id="services">
+          <h2 class="text-center font-weight-bold" style="color: #8d8f92;">
+            Our Services
+          </h2>
+          <div class="centrehr mt-n3 mb-5">
+            <div
+              class="divider mx-3 wow animate__animated animate__slideInRight"
+              style="border-radius: 5px;"
+            ></div>
+            <div
+              class="divider mx-3 wow animate__animated animate__slideInLeft"
+              style="border-radius: 5px;"
+            ></div>
+          </div>
+          <div class="services-grids row mr-n5 ml-n4 mr-md-n3 ml-nd-n3">
+            <div
+              class="services-grid wow animate__animated animate__slideInLeft col-12 col-md-6 my-2 d-md-flex flex-md-row-reverse row mr-md-4"
+            >
+              <div class="services-grid-icon col-3">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="#F2994A"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.859 6.52328C12.285 6.52979 12.7081 6.4515 13.1035 6.29298C13.499 6.13445 13.859 5.89885 14.1626 5.59988C14.4662 5.30091 14.7072 4.94456 14.8718 4.55155C15.0363 4.15854 15.1211 3.73672 15.1211 3.31066C15.1211 2.88459 15.0363 2.46277 14.8718 2.06977C14.7072 1.67676 14.4662 1.3204 14.1626 1.02143C13.859 0.722467 13.499 0.486865 13.1035 0.328337C12.7081 0.169809 12.285 0.0915219 11.859 0.0980313C10.0845 0.0980313 8.64523 1.53653 8.64523 3.31028C8.64543 4.16249 8.98411 4.97973 9.58678 5.58226C10.1895 6.18479 11.0068 6.52328 11.859 6.52328Z"
+                    fill="#F2994A"
+                  />
+                  <path
+                    d="M16.0984 7.50113H12.3158V10.5011L13.0114 10.6714V9.97575C13.0114 9.52387 13.4231 9.11362 14.1746 9.61875C15.2333 10.3324 16.3729 14.3858 15.1369 14.226C14.5403 14.1499 14.2031 13.8604 13.5461 13.8236C13.0125 13.7962 13.0125 13.5668 13.0118 13.2649C13.011 12.963 13.0118 11.994 13.0118 11.994V11.454C12.7797 11.3982 12.5478 11.3415 12.3161 11.2841V14.994C12.3161 14.994 13.359 14.2849 14.1049 14.8627C14.5751 15.2284 14.8695 16.2806 13.4149 17.1383C13.0793 17.3426 11.2519 17.826 10.6785 16.7498H10.0316C9.89119 16.7498 9.75652 16.8055 9.65721 16.9048C9.55791 17.0041 9.50213 17.1388 9.50213 17.2792C9.50213 17.4197 9.55791 17.5544 9.65721 17.6537C9.75652 17.753 9.89119 17.8088 10.0316 17.8088H13.8623C14.1535 17.8091 14.4326 17.9251 14.6385 18.1311C14.8443 18.337 14.9601 18.6163 14.9603 18.9075C14.9601 19.1986 14.8443 19.4778 14.6384 19.6837C14.4326 19.8896 14.1534 20.0053 13.8623 20.0055H9.8985C9.83638 20.0103 9.77838 20.0384 9.73607 20.0842C9.69376 20.1299 9.67026 20.1899 9.67026 20.2523C9.67026 20.3146 9.69376 20.3746 9.73607 20.4203C9.77838 20.4661 9.83638 20.4942 9.8985 20.499H13.8623C14.4675 20.499 14.9603 20.9918 14.9603 21.5978C14.9603 22.2038 14.4675 22.6957 13.8623 22.6957H9.2265C9.11352 22.6957 9.00517 22.6509 8.92527 22.571C8.84538 22.4911 8.8005 22.3827 8.8005 22.2698C8.8005 22.1568 8.84538 22.0484 8.92527 21.9685C9.00517 21.8886 9.11352 21.8438 9.2265 21.8438H13.8623C13.926 21.8413 13.9863 21.8142 14.0305 21.7682C14.0747 21.7223 14.0994 21.661 14.0994 21.5972C14.0994 21.5334 14.0747 21.4721 14.0305 21.4261C13.9863 21.3802 13.926 21.3531 13.8623 21.3506H9.8985C9.60745 21.3501 9.32845 21.2343 9.12265 21.0285C8.91684 20.8227 8.801 20.5437 8.8005 20.2526C8.8007 19.9613 8.9164 19.682 9.12223 19.4759C9.32806 19.2698 9.60722 19.1537 9.8985 19.1531H13.8623C13.9252 19.1496 13.9845 19.1222 14.0279 19.0764C14.0712 19.0305 14.0954 18.9698 14.0954 18.9067C14.0954 18.8437 14.0712 18.783 14.0279 18.7371C13.9845 18.6913 13.9252 18.6639 13.8623 18.6604H10.0316C9.66562 18.6598 9.31478 18.514 9.05608 18.2551C8.79738 17.9962 8.65192 17.6453 8.65163 17.2792C8.65192 16.9132 8.79736 16.5622 9.05606 16.3032C9.31475 16.0443 9.66558 15.8984 10.0316 15.8978H10.8866C10.8923 15.8978 10.8968 15.9008 10.9024 15.9008H11.1934C11.4761 15.9008 11.4653 15.6015 11.4645 15.6015V11.3287L10.7696 11.5215V11.9936C10.7696 11.9936 10.7704 12.9626 10.7696 13.2645C10.7696 13.5664 10.7674 13.7959 10.2353 13.8236C9.579 13.8604 9.24188 14.1499 8.64375 14.226C7.40813 14.3854 8.5485 10.3324 9.60488 9.61838C10.356 9.11287 10.7696 9.52312 10.7696 9.97537V10.7314L11.4645 10.5394V7.5H7.84838C5.57475 7.5 3.54675 9.34238 3.54675 11.6156V21.5782C3.54675 22.3556 4.15838 22.986 4.93388 22.986C5.11868 22.986 5.30166 22.9496 5.47237 22.8788C5.64308 22.808 5.79818 22.7043 5.92878 22.5736C6.05938 22.4428 6.16293 22.2876 6.23351 22.1169C6.3041 21.9461 6.34032 21.763 6.34013 21.5782V12.5955H7.50488V23.4709H16.2626V12.5955H17.4398V21.5782C17.4398 22.3556 18.0694 22.986 18.8464 22.986C19.6234 22.986 20.2346 22.3556 20.2346 21.5782V11.6156C20.2343 9.3435 18.3716 7.50113 16.0988 7.50113H16.0984Z"
+                    fill="#F2994A"
+                  />
+                </svg>
+              </div>
+              <div class="services-grid-text col-9">
+                <p><strong>Medicines Use Review</strong></p>
+                <p>
+                  We offer the best services to you at Envato care. The best
+                  Pharmacists and Doctors are available on standby.
+                </p>
+              </div>
+            </div>
+            <div
+              class="services-grid wow animate__animated animate__slideInRight col-12 col-md-6 my-2 row"
+            >
+              <div class="services-grid-icon col-3">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.0476 6.56778H8.52264V5.33177H15.4289V6.59369H16.9037V4.42289H16.9032C16.9019 4.26588 16.8387 4.11572 16.7275 4.00493C16.6162 3.89415 16.4657 3.83168 16.3087 3.83105H7.64136C7.48304 3.83112 7.33122 3.89406 7.21929 4.00603C7.10736 4.11801 7.04448 4.26985 7.04448 4.42817C7.04448 4.43897 7.04712 4.44881 7.0476 4.45961V6.56778Z"
+                    fill="#F2994A"
+                  />
+                  <path
+                    d="M5.94528 20.1686H18.0499V7.88086H5.94528V20.1686ZM8.34168 13.164C8.34301 13.1155 8.36286 13.0694 8.39714 13.0351C8.43143 13.0008 8.47754 12.981 8.526 12.9797L10.9824 12.9799V10.5235C10.9824 10.4217 11.065 10.3392 11.1667 10.3392H12.8875C12.9893 10.3392 13.0718 10.4217 13.0718 10.5237V12.9799H15.5285C15.6302 12.9799 15.7128 13.0625 15.7128 13.1642V14.885C15.7129 14.9092 15.7081 14.9332 15.6989 14.9556C15.6897 14.978 15.6761 14.9984 15.659 15.0155C15.6418 15.0326 15.6215 15.0462 15.5991 15.0554C15.5767 15.0647 15.5527 15.0694 15.5285 15.0693H13.0718V17.526C13.0719 17.5502 13.0671 17.5742 13.0579 17.5966C13.0486 17.6189 13.035 17.6393 13.0179 17.6564C13.0008 17.6735 12.9805 17.6871 12.9581 17.6963C12.9357 17.7056 12.9117 17.7103 12.8875 17.7103H11.167C11.1427 17.7103 11.1188 17.7056 11.0964 17.6963C11.074 17.6871 11.0537 17.6735 11.0366 17.6564C11.0194 17.6393 11.0059 17.6189 10.9966 17.5966C10.9874 17.5742 10.9826 17.5502 10.9826 17.526V15.0691H8.526C8.50179 15.0691 8.47781 15.0644 8.45543 15.0551C8.43305 15.0459 8.41272 15.0323 8.3956 15.0152C8.37848 14.9981 8.3649 14.9777 8.35565 14.9554C8.3464 14.933 8.34165 14.909 8.34168 14.8848V13.164Z"
+                    fill="#F2994A"
+                  />
+                  <path
+                    d="M3.32041 7.8811C3.19442 7.88104 3.06966 7.9058 2.95325 7.95396C2.83684 8.00213 2.73106 8.07276 2.64195 8.16183C2.55285 8.25089 2.48216 8.35663 2.43393 8.47302C2.38571 8.58941 2.36089 8.71416 2.36089 8.84014C2.36089 8.85286 2.36401 8.86462 2.36473 8.8771V19.1827C2.36449 19.1911 2.36233 19.1988 2.36233 19.2072C2.36252 19.4614 2.4635 19.7052 2.64315 19.885C2.82279 20.0649 3.06643 20.1662 3.32065 20.1667V20.1686H4.75081V7.88086L3.32041 7.8811Z"
+                    fill="#F2994A"
+                  />
+                  <path
+                    d="M21.6384 19.2014V8.83534H21.6338C21.6324 8.58188 21.5308 8.33926 21.3512 8.16043C21.1716 7.98161 20.9285 7.88111 20.675 7.88086H19.2449V20.1686H20.6712V20.1679C20.6741 20.1679 20.6767 20.1686 20.6796 20.1686C20.8056 20.1687 20.9304 20.1439 21.0468 20.0956C21.1633 20.0474 21.269 19.9768 21.3582 19.8877C21.4473 19.7985 21.5179 19.6928 21.5661 19.5763C21.6144 19.4599 21.6392 19.3351 21.6391 19.2091C21.6391 19.2067 21.6384 19.2041 21.6384 19.2014Z"
+                    fill="#F2994A"
+                  />
+                </svg>
+              </div>
+              <div class="services-grid-text col-9">
+                <p><strong>First Aid</strong></p>
+                <p>
+                  We offer First Aid services for our customers.
+                </p>
+              </div>
+            </div>
+            <div
+              class="services-grid wow animate__animated animate__slideInLeft col-12 col-md-6 my-2 d-md-flex flex-md-row-reverse row mr-md-4"
+            >
+              <div class="services-grid-icon col-3">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 11H13V9.99997C13 9.73475 12.8946 9.4804 12.7071 9.29286C12.5196 9.10533 12.2652 8.99997 12 8.99997C11.7348 8.99997 11.4804 9.10533 11.2929 9.29286C11.1054 9.4804 11 9.73475 11 9.99997V11H10C9.73478 11 9.48043 11.1053 9.29289 11.2929C9.10536 11.4804 9 11.7348 9 12C9 12.2652 9.10536 12.5195 9.29289 12.7071C9.48043 12.8946 9.73478 13 10 13H11V14C11 14.2652 11.1054 14.5195 11.2929 14.7071C11.4804 14.8946 11.7348 15 12 15C12.2652 15 12.5196 14.8946 12.7071 14.7071C12.8946 14.5195 13 14.2652 13 14V13H14C14.2652 13 14.5196 12.8946 14.7071 12.7071C14.8946 12.5195 15 12.2652 15 12C15 11.7348 14.8946 11.4804 14.7071 11.2929C14.5196 11.1053 14.2652 11 14 11ZM20.16 4.99997C19.0937 3.94467 17.6853 3.30524 16.189 3.19705C14.6927 3.08886 13.207 3.51904 12 4.40997C10.7277 3.46361 9.14399 3.03448 7.56792 3.20901C5.99185 3.38353 4.54044 4.14875 3.50597 5.35055C2.47151 6.55236 1.93082 8.10149 1.9928 9.68598C2.05478 11.2705 2.71482 12.7726 3.84 13.89L9.84 19.94C10.4025 20.5018 11.165 20.8173 11.96 20.8173C12.755 20.8173 13.5175 20.5018 14.08 19.94L20.08 13.89C20.6709 13.3126 21.1419 12.6242 21.4659 11.8642C21.79 11.1042 21.9606 10.2877 21.968 9.4616C21.9755 8.63548 21.8195 7.81603 21.5093 7.05035C21.199 6.28467 20.7404 5.58786 20.16 4.99997ZM18.75 12.46L12.75 18.46C12.657 18.5537 12.5464 18.6281 12.4246 18.6789C12.3027 18.7296 12.172 18.7558 12.04 18.7558C11.908 18.7558 11.7773 18.7296 11.6554 18.6789C11.5336 18.6281 11.423 18.5537 11.33 18.46L5.33 12.46C4.54576 11.6583 4.10661 10.5814 4.10661 9.45997C4.10661 8.3385 4.54576 7.26162 5.33 6.45997C6.12916 5.67096 7.20697 5.22854 8.33 5.22854C9.45303 5.22854 10.5308 5.67096 11.33 6.45997C11.423 6.5537 11.5336 6.62809 11.6554 6.67886C11.7773 6.72963 11.908 6.75577 12.04 6.75577C12.172 6.75577 12.3027 6.72963 12.4246 6.67886C12.5464 6.62809 12.657 6.5537 12.75 6.45997C13.5492 5.67096 14.627 5.22854 15.75 5.22854C16.873 5.22854 17.9508 5.67096 18.75 6.45997C19.5403 7.26252 19.9832 8.34365 19.9832 9.46997C19.9832 10.5963 19.5403 11.6774 18.75 12.48V12.46Z"
+                    fill="#F2994A"
+                  />
+                </svg>
+              </div>
+              <div class="services-grid-text col-9">
+                <p><strong>Healthy Heart Check</strong></p>
+                <p>
+                  We also sell medical kits for hospitals and personal use.
+                </p>
+              </div>
+            </div>
+            <div
+              class="services-grid wow animate__animated animate__slideInRight col-12 col-md-6 my-2 row"
+            >
+              <div class="services-grid-icon col-3">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 18.5C18.83 18.5 19.5 17.83 19.5 17C19.5 16.17 18.83 15.5 18 15.5C17.17 15.5 16.5 16.17 16.5 17C16.5 17.83 17.17 18.5 18 18.5ZM19.5 9.5H17V12H21.46L19.5 9.5ZM6 18.5C6.83 18.5 7.5 17.83 7.5 17C7.5 16.17 6.83 15.5 6 15.5C5.17 15.5 4.5 16.17 4.5 17C4.5 17.83 5.17 18.5 6 18.5ZM20 8L23 12V17H21C21 18.66 19.66 20 18 20C16.34 20 15 18.66 15 17H9C9 18.66 7.66 20 6 20C4.34 20 3 18.66 3 17H1V6C1 4.89 1.89 4 3 4H17V8H20ZM3 6V15H3.76C4.31 14.39 5.11 14 6 14C6.89 14 7.69 14.39 8.24 15H15V6H3ZM10 7L13.5 10.5L10 14V11.5H5V9.5H10V7Z"
+                    fill="#F2994A"
+                  />
+                </svg>
+              </div>
+              <div class="services-grid-text col-9">
+                <p><strong>Delivery Service</strong></p>
+                <p>
+                  We deliver to any part of the country, you dont have to bother
+                  about how drugs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCTS SECTION -->
+        <div class="products container-fluid p-5" id="products">
+          <h2
+            class="text-center font-weight-bold"
+            style="color: #8d8f92;"
+            id="products"
+          >
+            Recent Products
+          </h2>
+          <div class="centrehr mt-n3 mb-5">
+            <div
+              class="divider mx-3 wow animate__animated animate__slideInRight"
+              style="border-radius: 5px;"
+            ></div>
+            <div
+              class="divider mx-3 wow animate__animated animate__slideInLeft"
+              style="border-radius: 5px;"
+            ></div>
+          </div>
+          <div class="product-boxes row justify-content-center">
+            <div
+              class="product-box wow animate__animated animate__bounceInUp col-xs-12 col-sm-5 col-md-3 my-4 m-md-3"
+            >
+              <div class="imagesec">
+                <img
+                  src="assets/benadryl-syrup.png"
+                  class="d-block img-fluid m-auto p-4 pt-5"
+                  alt=""
+                />
+              </div>
+              <div class="bottom pt-5 pb-4 px-4">
+                <div class="text-center">
+                  <p class="greytext">Benadryl Syrup</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-box wow animate__animated animate__bounceInUp col-xs-12 col-sm-5 col-md-3 my-4 m-md-3"
+            >
+              <div class="imagesec">
+                <img
+                  src="assets/amoxicillin-tab.png"
+                  class="d-block img-fluid m-auto p-4 pt-5"
+                  alt=""
+                />
+              </div>
+              <div class="bottom pt-5 pb-4 px-4">
+                <div class="text-center">
+                  <p class="greytext">Amoxicillin Tablet</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-box wow animate__animated animate__bounceInUp col-xs-12 col-sm-5 col-md-3 my-4 m-md-3"
+            >
+              <div class="imagesec">
+                <img
+                  src="assets/folic-acid.png"
+                  class="d-block img-fluid m-auto p-4 pt-5"
+                  alt=""
+                />
+              </div>
+              <div class="bottom pt-5 pb-4 px-4">
+                <div class="text-center">
+                  <p class="greytext">Folic Acid</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-box wow animate__animated animate__bounceInUp col-xs-12 col-sm-5 col-md-3 my-4 m-md-3"
+            >
+              <div class="imagesec">
+                <img
+                  src="assets/amatem-forte.png"
+                  class="d-block img-fluid m-auto p-4 pt-5"
+                  alt=""
+                />
+              </div>
+              <div class="bottom pt-5 pb-4 px-4">
+                <div class="text-center">
+                  <p class="greytext">Amatem Forte</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-box wow animate__animated animate__bounceInUp col-xs-12 col-sm-5 col-md-3 my-4 m-md-3"
+            >
+              <div class="imagesec">
+                <img
+                  src="assets/benadryl-syrup.png"
+                  class="d-block img-fluid m-auto p-4 pt-5"
+                  alt=""
+                />
+              </div>
+              <div class="bottom pt-5 pb-4 px-4">
+                <div class="text-center">
+                  <p class="greytext">Gesomid Suspension</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-box wow animate__animated animate__bounceInUp col-xs-12 col-sm-5 col-md-3 my-4 m-md-3"
+            >
+              <div class="imagesec">
+                <img
+                  src="assets/benadryl-syrup.png"
+                  class="d-block img-fluid m-auto p-4 pt-5"
+                  alt=""
+                />
+              </div>
+              <div class="bottom pt-5 pb-4 px-4">
+                <div class="text-center">
+                  <p class="greytext">Paracetamol Tablet</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT SECTION -->
+        <div class="contact mb-3 mt-5" id="contact">
+          <h2
+            class="text-center font-weight-bold"
+            style="color: #8d8f92;"
+            id="products"
+          >
+            Contact Us
+          </h2>
+          <div class="centrehr mt-n3 mb-5">
+            <div
+              class="divider mx-3 wow animate__animated animate__slideInRight"
+              style="border-radius: 5px;"
+            ></div>
+            <div
+              class="divider mx-3 wow animate__animated animate__slideInLeft"
+              style="border-radius: 5px;"
+            ></div>
+          </div>
+          <div class="contact-map" id="contact-map"></div>
+          <div
+            class="contact-area container-fluid p-3 p-lg-4 row mx-auto justify-content-center"
+          >
+            <div
+              class="contact-form col-12 col-lg-4 p-md-5 p-lg-0 mr-lg-5 text-center text-lg-left"
+            >
+              <h2 class="font-weight-bold mb-2 mb-md-4 mt-3">
+                Reach out to us
+              </h2>
+              <p>
+                We look forward to hearing from you about your medication, or
+                anything relating to your health and wellness.
+              </p>
+              <form class="my-4">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    placeholder="Subject"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fullname"
+                    placeholder="Full Name"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-sec px-5">
+                  SEND
+                </button>
+              </form>
+            </div>
+            <div class="vl mr-4 d-none d-sm-block"></div>
+            <hr class="d-lg-none" />
+
+            <div class="contact-options col-12 col-lg-7">
+              <div class="other-contact-options row my-3">
+                <div
+                  class="a-contact-option col-12 col-md-6 justify-content-center my-3 row"
+                >
+                  <div class="a-contact-option-icon col-2">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  </div>
+                  <div class="a-contact-option-text col-8">
+                    <p>1901 Thornridge Cir. Shail</p>
+                  </div>
+                </div>
+                <div
+                  class="a-contact-option col-12 col-md-6 justify-content-center my-3 row"
+                >
+                  <div class="a-contact-option-icon col-2">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                  </div>
+                  <div class="a-contact-option-text col-8">
+                    <p>(603) 555-0123 0123456789</p>
+                  </div>
+                </div>
+                <div
+                  class="a-contact-option col-12 col-md-6 justify-content-center my-3 row"
+                >
+                  <div class="a-contact-option-icon col-2">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  </div>
+                  <div class="a-contact-option-text col-8">
+                    <p>
+                      medzone@info.com <br />
+                      demo@demo.com
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="a-contact-option col-12 col-md-6 justify-content-center my-3 row"
+                >
+                  <div class="a-contact-option-icon col-2">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  </div>
+                  <div class="a-contact-option-text col-8">
+                    <p>
+                      8:00am – 10:00pm <br />
+                      Closed on Sundays
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-weight-bold">FOLLOW US ON</h4>
+                <div class="follow-options row">
+                  <div
+                    class="a-follow-option col-12 col-md-6 justify-content-center my-2 row"
+                  >
+                    <div class="a-follow-option-icon col-2">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>
+                    <div class="a-follow-option-text col-8">
+                      <p>Envato Care Pharmacy</p>
+                    </div>
+                  </div>
+                  <div
+                    class="a-follow-option col-12 col-md-6 justify-content-center my-2 row"
+                  >
+                    <div class="a-follow-option-icon col-2">
+                      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </div>
+                    <div class="a-follow-option-text col-8">
+                      <p>Envato Care Pharmacy</p>
+                    </div>
+                  </div>
+                  <div
+                    class="a-follow-option col-12 col-md-6 justify-content-center my-2 row"
+                  >
+                    <div class="a-follow-option-icon col-2">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
+                    <div class="a-follow-option-text col-8">
+                      <p>
+                        EnvatoCare
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="a-follow-option col-12 col-md-6 justify-content-center my-2 row"
+                  >
+                    <div class="a-follow-option-icon col-2">
+                      <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                    <div class="a-follow-option-text col-8">
+                      <p>
+                        EnvatoCare
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div
+          class="footer-area container-fluid px-4 px-md-5 py-5 row text-white"
+        >
+          <div class="footer-intro col-12 col-md-4 mb-5 mb-md-1">
+            <h4><span class="special-footer-text">Envato Care</span></h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
+              est, urna egestas viverra pellentesque a aenean nisi gravida.
+            </p>
+          </div>
+          <div class="footer-logo px-5 col-12 col-md-4 mb-5 mb-md-1">
+            <img
+              src="assets/footer-logo.png"
+              alt=""
+              style="display: block; max-width: 100%; height: auto;"
+            />
+          </div>
+          <div class="footer-contact col-12 col-md-4 mb-3 mb-md-1">
+            <h4><span class="special-footer-text">Contact</span></h4>
+            <p>
+              <span class="special-footer-text">Address: </span>
+              1901 Thornridge Cir. Shail
+            </p>
+            <p>
+              <span class="special-footer-text">Phone: </span>
+              (603) 555-0123
+            </p>
+            <p>
+              <span class="special-footer-text">Email: </span>
+              Medzone@info.co
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="copyright-area text-white text-center py-2 px-4">
+          <p class="mb-0">
+            Copyright © 2020
+            <span class="special-footer-text">Envato Care</span>. All Rights
+            Reserved.
+          </p>
+        </div>
+      </footer>
+      <i
+        class="fa fa-chevron-up"
+        aria-hidden="true"
+        onclick="topFunction()"
+        id="myBtn"
+        title="Go to top"
+        style="font-size: 15px;"
+      ></i>
+    </div>
+    <script>
+      function initMap() {
+        var uluru = { lat: 33.12919, lng: -97.17333 };
+        var map = new google.maps.Map(document.getElementById('contact-map'), {
+          zoom: 11,
+          center: uluru,
+        });
+        var marker = new google.maps.Marker({ position: uluru, map: map });
+      }
+    </script>
+    <!--Bootstrap JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- WOW JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <script src="src/variation-four.js" async defer></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb6EW9xZogn8z9rI9lWrOM9_k37rnGZvI&callback=initMap"
+    ></script>
+  </body>
+</html>
